@@ -1,0 +1,476 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*** color pallette  **********************
+
+#d70504 - bright red
+#8c6d73 (140,109,115) - light purple
+#4b86cb - blue
+#dddbdc - grey - light
+#080401 - black
+*/
+
+/*base styles for a tags*/
+
+
+
+/*styles for header*/
+
+.jumbotron {
+	
+}
+
+
+/*styles for cards on site*/
+
+.index-card-1 {
+	
+}
+
+.index-card-1 a{
+	margin-top:40%;
+}
+
+.index-card-1 p{
+	top:50%; 
+	width:90%;
+}
+
+.index-card-2 {
+	
+}
+
+.index-card-2 a{
+	margin-top:45%;
+}
+
+.index-card-2 p{
+	top:50%;
+    width:90%;	
+}
+
+.index-card-3 {
+	
+}
+
+.index-card-3 a{
+	margin-top:50%;
+}
+
+.index-card-3 p{
+	top:50%; 
+	width:80%;
+}
+	
+.index-card-4 {
+	
+}
+
+.index-card-4 a{
+	margin-top:50%;
+}
+
+.index-card-4 p{
+	top:50%; 
+	width:80%;
+}
+	
+.index-card-5 {
+
+}
+
+.index-card-5 a{
+	margin-top:50%;
+}
+
+.index-card-5 p{
+	top:50%; 
+	width:80%;
+}
+	
+.index-card-6 {
+
+}
+
+.index-card-6 a{
+	margin-top:40%;
+}
+
+.index-card-6 p{
+	top:50%; 
+	width:80%;
+}
+
+.services-card-1 {
+	
+}
+
+.services-card-1 a{
+	margin-top:40%;
+}
+
+.services-card-1 p{
+	top:50%;
+	width:90%;
+}
+
+.services-card-2 {
+	
+}
+
+.services-card-2 a{
+	margin-top:40%;
+}
+
+.services-card-2 p{
+	top:50%;
+	width:90%;
+}
+
+.card{
+	border:none;
+	margin-bottom:5%;
+}
+
+.card-header, .card-footer {
+	border:none;
+	background-color:#ffffff;
+}
+
+.card-body img {
+	border-radius:10px;
+	
+}
+
+/*styles for nav*/
+
+nav {
+
+	
+}
+
+#nav{
+	background-color:#ffffff; /* needs to be same color as navbar-nav BG color*/
+	padding: 0px;
+	
+}
+
+.navbar-nav {
+	
+}
+.navbar-brand{
+	margin-right:0px;
+}
+
+.collapse, nav {
+	background-color:#ffffff;
+}
+
+.active{
+	line-height: 35px !important;
+	background-color: #dddbdc !important;
+	border-color: #dddbdc !important;
+	vertical-align: middle;
+	margin: none;
+	border-radius: 5px !important;
+	border-width: 0px !important;
+	height: 40px;
+	border-style: solid !important;
+}
+
+/*styles for image overlay*/
+
+.img-overlay {
+    position: relative;
+	color: blue;
+	background-color:  rgba(0,0,0, 0.5);
+	border-style: solid;
+    border-color: gray;
+	border-width: 1px;
+	padding: 0;
+	border-radius: 15px;	
+}
+
+
+/*quote page styles*/
+
+form {
+	text-shadow: 0px 1px 1px #000;
+	background: #d8e7ff;
+	box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.2), 0 2px 20px -3px rgba(0, 0, 0, 0.19);
+	border-radius: 15px;
+	padding:5%;
+	z-index: 2100;
+}
+
+
+.form-control:focus{
+		border-color: #ffffff;  box-shadow: none; -webkit-box-shadow: none;
+		border-width: 1px;
+} 
+		
+.has-error .form-control:focus{
+		box-shadow: none; -webkit-box-shadow: none;
+}
+
+input[type=text], input[type=email], select {
+	margin-bottom: 13px;
+    padding: 8px 10px;
+    box-shadow: 3px 3px 3px  #aaa;
+    border-radius: 10px;
+}
+
+
+
+
+
+/*********** mobile specific stylesheet ******
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+   **/
+   
+/* Small devices (landscape phones, 576px and up)*/
+
+	@media screen and (min-width: 576px){
+	
+	}
+
+	@media screen and (min-width: 768px) /* Desktop */ {
+    
+	
+	.index-card-1 {
+	
+	}
+
+	.index-card-1 a {
+		margin-top:50%;
+	}
+
+	.index-card-1 p {
+		top:50%; 
+		width:80%;
+	}
+
+	.index-card-2 {
+	
+	}
+
+	.index-card-2 a{
+		margin-top:50%;
+	}
+
+	.index-card-2 p{
+		top:50%; 
+		width:80%;
+	}
+	
+	.index-card-3 {
+	
+	}
+
+	.index-card-3 a{
+		margin-top:50%;
+	}
+
+	.index-card-3 p{
+		top:50%; 
+		width:80%;
+	}
+	
+	.index-card-4 {
+	
+	}
+
+	.index-card-4 a{
+		margin-top:50%;
+	}
+
+	.index-card-4 p{
+		top:50%; 
+		width:80%;
+	}
+	
+	.index-card-5 {
+	
+	}
+
+	.index-card-5 a{
+		margin-top:50%;
+	}
+
+	.index-card-5 p{
+		top:50%; 
+		width:80%;
+	}
+	
+	.index-card-6 {
+	
+	}
+
+	.index-card-6 a{
+		margin-top:50%;
+	}
+
+	.index-card-6 p{
+		top:60%; 
+		width:80%;
+	}
+	
+	
+	
+	.services-card-2 a {
+		margin-top:45%;
+	}
+	
+	.pricing-card-1 {
+		margin-left:15%;
+	}
+}
+
+	@media screen  and (min-width: 992px) /* Tablet */ {
+		
+		
+	/*header styles*/
+	
+	.headertext {
+		width:50%;
+		float:left;
+	}
+
+	.headerlogo {
+		width:45%;
+		float:right;
+	}
+	
+	.jumbotron {
+		max-height:360px;
+	}
+		
+	/*styles for cards on site*/
+	
+	.index-card-1 {
+	
+	}
+
+	.index-card-1 a {
+		margin-top:50%;
+	}
+
+	.index-card-1 p {
+		top:50%; 
+		width:80%;
+	}
+
+	.index-card-2 {
+	
+	}
+
+	.index-card-2 a{
+		margin-top:50%;
+	}
+
+	.index-card-2 p{
+		top:50%; 
+		width:80%;
+	}
+	
+	.index-card-3 {
+	
+	}
+
+	.index-card-3 a{
+		margin-top:50%;
+	}
+
+	.index-card-3 p{
+		top:50%; 
+		width:80%;
+	}
+	
+	.index-card-4 {
+	
+	}
+
+	.index-card-4 a{
+		margin-top:50%;
+	}
+
+	.index-card-4 p{
+		top:50%; 
+		width:80%;
+	}
+	
+	.index-card-5 {
+	
+	}
+
+	.index-card-5 a{
+		margin-top:50%;
+	}
+
+	.index-card-5 p{
+		top:50%; 
+		width:80%;
+	}
+	
+	.index-card-6 {
+	
+	}
+
+	.index-card-6 a{
+		margin-top:50%;
+	}
+
+	.index-card-6 p{
+		top:50%; 
+		width:80%;
+	}
+
+	.services-card-1 {
+		
+	}
+
+	.services-card-1 a{
+		margin-top:40%;
+	}
+
+	.services-card-1 p{
+		top:50%; 
+		left:10%; 
+		width:80%;
+	}
+
+	.services-card-2 {
+		
+	}
+
+	.services-card-2 a{
+		margin-top:40%;
+	}
+
+	.services-card-2 p{
+		top:50%; 
+		left:10%; 
+		width:80%;
+	}
+
+}
+
+	@media screen and (min-width: 1200px) {
+		
+	}
+
+
+  
