@@ -20,18 +20,18 @@
 
 h1, h2, h3, h4 {
 	color:#080401;
-	font-family:poiret-one,sans-serif;
+	font-family: 'Aref Ruqaa',serif;
 	font-weight:900;
 }
 
 h5, h6 {
 	color:#d70504;
-	font-family:poiret-one,sans-serif;
+	font-family: 'Aref Ruqaa',serif;
 }
 
 /*************************** TEXT TAG STYLES *************************************/
 p, a, label, input {
-	font-family: rosario, sans-serif;
+	font-family: 'Taviraj', serif;
 }
 
 /***************************** LINK STYLES ************************************/
