@@ -10,25 +10,16 @@
 
 <?php
 
-$email_to = "joesservice2018@gmail.com";
+$email_to = "info@wagnercarpetsroc.com";
 $email_subject = "Customer Information Request";
  
 // Escape user inputs for security - references the name attribute on the contact page in the POST 
 
 $customer_name = $_POST['clientname'];
-$customer_address = $_POST['clientaddress'];
-$customer_city = $_POST['clientcity'];
-$customer_state = $_POST['clientstate'];
-$customer_zip = $_POST['clientzip'];
-
 $customer_email = $_POST['email'];
 $customer_phone = $_POST['phone'];
 	
-$tire_repair = $_POST['tire'];
-$air_conditioning = $_POST['airconditioning'];
-$transmission = $_POST['transmission'];
-$motor = $_POST['motor'];
-$other_reason = $_POST['other'];
+$on_site_estimate = $_POST['onsiteestimate'];
 	
 $additional_comments = $_POST['comments'];
 
@@ -58,15 +49,10 @@ $email_message = "
 				 </head>
 				 <body>".
 				 "<div><h4>Name: </h4>". "<div class='data'>". $customer_name. "</div></div>".
-				 "<div><h4>Address: </h4>". "<div class='data'>". $customer_address." ". $customer_city.", ". $customer_state." " .$customer_zip. "</div></div>".
 				 "<div><h4>Email: </h4>". "<div class='data'>". $customer_email. "</div></div>".
 				 "<div><h4>Phone: </h4>". "<div class='data'>". $customer_phone. "</div></div>".
 	
-				 "<div><h4>Tire Repair: </h4>". "<div class='data'>". $tire_repair. "</div></div>".
-				 "<div><h4>Air Conditioning: </h4>". "<div class='data'>". $air_conditioning. "</div></div>".
-				 "<div><h4>Transmission: </h4>". "<div class='data'>". $transmission. "</div></div>".
-				 "<div><h4>Motor Repair: </h4>". "<div class='data'>". $motor. "</div></div>".
-				 "<div><h4>Other Reason: </h4>". "<div class='data'>". $other_reason. "</div></div>".
+				 "<div><h4>On Site Estimate: </h4>". "<div class='data'>". $on_site_estimate. "</div></div>".
 	
 				 "<div><h4>Comments: </h4>". "<div class='data'>". $additional_comments. "</div></div>".
 				 "</body>
