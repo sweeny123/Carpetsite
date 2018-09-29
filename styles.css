@@ -21,6 +21,11 @@
 	
 }
 
+.header {
+	background-image:url(media/stairrunner.jpg);
+	background-attachment:fixed;
+}
+
 
 /*styles for cards on site*/
 
