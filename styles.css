@@ -13,7 +13,11 @@
 
 /*base styles for a tags*/
 
+/*base styles for p tags*/
 
+p {
+	font-size:0.95em;
+}
 
 /*styles for header*/
 
@@ -22,9 +26,15 @@
 }
 
 .header {
-	background-image:url(media/stairrunner.jpg);
+	background-image:url(media/R.BoundCarpet/area.grey.jpg);
 	background-attachment:fixed;
+	background-size: 100% 100%;
 }
+
+/*styles for footer*/
+
+
+
 
 
 /*styles for cards on site*/

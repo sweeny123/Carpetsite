@@ -78,6 +78,16 @@ a:hover {
 
 /***************************** FOOTER STYLES *******************************/
 
+footer {
+	width:80%;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+footer .card {
+	border-top:1px solid #cccccc;
+	border-radius:0px;
+}
 
 footer .list-group-item {
 	border:none;
@@ -88,6 +98,7 @@ footer .list-group-item {
 footer .list-group {
 	margin-bottom:8%;
 	margin-top:6%;
+	list-style-type:none;
 }
 
 footer p {
@@ -233,7 +244,6 @@ input[type=text], input[type=email], select {
 	.jumbotron {
 		background-color:#ffffff;
 		
-		height:500px;
 	}
 
 	.navbar-collapse li {
@@ -256,6 +266,9 @@ input[type=text], input[type=email], select {
 
 /* Large devices (desktops, 992px and up)*/
 	@media screen and (min-width: 992px) { 
+	nav h2 a{
+		padding-left:25%;
+	}
 
 	.jumbotron-fluid img {
 		
@@ -264,7 +277,6 @@ input[type=text], input[type=email], select {
 	.jumbotron {
 		background-color:#ffffff;
 		
-		height:500px;
 	}
 
 
