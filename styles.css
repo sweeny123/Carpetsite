@@ -33,7 +33,10 @@ p {
 
 /*styles for footer*/
 
-
+.footer-card {
+		width:100%;
+		margin-top:-5%;
+	}
 
 
 

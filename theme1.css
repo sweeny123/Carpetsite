@@ -287,7 +287,25 @@ input[type=text], input[type=email], select {
 		text-align: center;
 	}
 	
+	footer .card {
+		width:48%;
+		display:inline-block;
+		padding:0;
+	}
 	
+	.footer-card {
+		margin-top:10%;
+		width:100%;
+	}
+	
+	.footer-card .list-group {
+		width:100%;
+	}
+	
+	.footer-card .list-group-item {
+		border:none;
+		
+	}
 
 }
 
@@ -332,14 +350,13 @@ input[type=text], input[type=email], select {
 	}
 	
 	footer .card {
-		width:100%;
 		padding-top:0%;
 	}
 	
 	footer, footer ul, footer .card {
 		max-height:150px;
 	}
-
+	
 }
 
 
