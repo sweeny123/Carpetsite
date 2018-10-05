@@ -1,0 +1,366 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+
+/*** color pallette  **********************
+
+#d70504 - bright red
+#8c6d73 (140,109,115) - light purple
+#4b86cb - blue
+#dddbdc - grey - light
+#080401 - black
+*/
+
+/**************************** HEADING TAG STYLES *********************************/
+
+h1, h2, h3, h4 {
+	color:#080401;
+	font-family: 'Aref Ruqaa',serif;
+	font-weight:900;
+}
+
+h5, h6 {
+	color:#d70504;
+	font-family: 'Aref Ruqaa',serif;
+}
+
+/*************************** TEXT TAG STYLES *************************************/
+p, a, label, input {
+	font-family: 'Taviraj', serif;
+}
+
+/***************************** LINK STYLES ************************************/
+a {
+	text-decoration:none;
+	color:#4b86cb;
+	font-weight:500;
+}
+
+a:hover {
+	text-decoration:none;
+	color:#4b86fb;
+}
+
+/***************************** BUTTON STYLES *********************************/
+
+.btn-info {
+	background-color:#4b86cb;
+	border-color:#4b86cb;
+}
+
+.btn-info:hover {
+	border-color:#4b86cb;
+	background-color:#4b86fb;
+}
+
+.btn-outline-primary {
+	border-color:#4b86cb;
+}
+
+/***************************** HEADER STYLES ******************************/
+
+.jumbotron img {
+	max-width:100%;
+	
+}
+
+.jumbotron {
+	background-color:#ffffff;
+}
+
+.jumbotron .container {
+}
+
+/***************************** FOOTER STYLES *******************************/
+
+footer {
+	width:80%;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+footer .card {
+	border-top:1px solid #cccccc;
+	border-radius:0px;
+}
+
+footer .list-group-item {
+	border:none;
+	margin:0;
+	padding:0;
+}
+
+footer .list-group {
+	margin-bottom:8%;
+	margin-top:6%;
+	list-style-type:none;
+}
+
+footer p {
+	font-size:0.8em;
+	margin-bottom:0;
+}
+
+.social-foot{
+	font-size: 2.5em;
+}
+
+.fa{
+	text-decoration: none;
+}
+
+/****************************** CARD STYLES ********************************/
+
+.card{
+	border:none;
+	margin-bottom:5%;
+}
+
+.card-header, .card-footer {
+	border:none;
+	background-color:#ffffff;
+}
+
+.card-body img {
+	border-radius:10px;
+}
+
+.img-overlay a {
+	position:relative;
+}
+
+.card-img-overlay, .card .container, .card-body, .container-fluid {
+	padding:0;
+}
+
+
+/**************************** NAVIGATION STYLES ***************************/
+
+.navbar-nav {
+	text-align: center;
+	background-color:#ffffff;
+}
+
+.nav-item{
+	line-height: 35px;
+}
+
+/**************************** CONTACT US FORM *****************************/
+
+form {
+	text-shadow: 0px 1px 1px #000;
+	background: #d8e7ff;
+	box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.2), 0 2px 20px -3px rgba(0, 0, 0, 0.19);
+	border-radius: 15px;
+	padding:5%;
+	display: inline-block;
+	z-index: 2100;
+}
+
+
+.form-control:focus{
+	border-color: #ffffff;  box-shadow: none; -webkit-box-shadow: none;
+	border-width: 1px;
+} 
+	
+.has-error .form-control:focus{
+	box-shadow: none; -webkit-box-shadow: none;
+}
+
+input[type=text], input[type=email], select {
+    padding: 8px 10px;
+    box-shadow: 3px 3px 3px  #aaa;
+    border-radius: 10px;
+}
+
+.form-check-input {
+	margin-left:13%;
+}
+
+.form-check-label {
+	margin-left:21%;
+}
+
+/************************* ANIMATION DELAYS **********************************/
+
+.delay-1 {
+	animation-delay:.25s;
+}
+
+.delay-2 {
+	animation-delay:.5s;
+}
+
+.delay-3 {
+	animation-delay:.75s;
+}
+
+.delay-4 {
+	animation-delay:1s;
+}
+
+.delay-5 {
+	animation-delay:1.25s;
+}
+
+.delay-6 {
+	animation-delay:1.5s;
+}
+
+.delay-7 {
+	animation-delay:1.75s;
+}
+
+.delay-8 {
+	animation-delay:2s;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+	@media screen and (min-width: 576px) { 
+
+	.btn{
+		top: -40px;
+		z-index: 2000;
+	}
+	
+	.jumbotron {
+		background-color:#ffffff;
+	}
+	
+	
+}
+
+/* Medium devices (tablets, 768px and up)*/
+	@media screen and (min-width: 768px) { 
+	.jumbotron-fluid img {
+		
+	}
+	
+	.jumbotron {
+		background-color:#ffffff;
+		
+	}
+
+	.navbar-collapse li {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	
+    .card {
+		width:45%;
+		display:inline-block;
+	}
+	
+	footer .card {
+		width:100%;
+		padding-top:0%;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+	@media screen and (min-width: 992px) { 
+	nav h2 a{
+		padding-left:25%;
+	}
+
+	.jumbotron-fluid img {
+		
+	}
+	
+	.jumbotron {
+		background-color:#ffffff;
+		
+	}
+
+
+	.navbar-collapse li {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	
+	footer .card {
+		width:48%;
+		display:inline-block;
+		padding:0;
+	}
+	
+	.footer-card {
+		margin-top:10%;
+		width:100%;
+	}
+	
+	.footer-card .list-group {
+		width:100%;
+	}
+	
+	.footer-card .list-group-item {
+		border:none;
+		
+	}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media screen and (min-width: 1200px) { 
+.jumbotron-fluid img {
+		
+	}
+	
+	
+	
+	nav a {
+		
+		font-size:1.1em;
+	}
+	
+	.page-content {
+		
+		width:100%;
+		
+	}
+	
+	.card {
+		width:45%;
+		display:inline-block;
+	}
+	
+	.card-header h3 {
+		font-size:2.6em;
+	}
+	
+	footer h6 {
+		font-size:1.6em;
+	}
+	
+	footer h3 {
+		font-size:2.4em;
+	}
+	
+	footer p {
+		font-size:1.0em;
+	}
+	
+	footer .card {
+		padding-top:0%;
+	}
+	
+	footer, footer ul, footer .card {
+		max-height:150px;
+	}
+	
+}
+
+
+
+
+
+
