@@ -25,7 +25,7 @@ h1, h2, h3, h4 {
 }
 
 h5, h6 {
-	color:#d70504;
+	color:#b8b894;
 	font-family: 'Aref Ruqaa',serif;
 }
 
@@ -232,7 +232,9 @@ input[type=text], input[type=email], select {
 		background-color:#ffffff;
 	}
 	
-	
+	.footer-card .list-group {
+		width:90%;
+	}
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -261,6 +263,10 @@ input[type=text], input[type=email], select {
 	footer .card {
 		width:100%;
 		padding-top:0%;
+	}
+	
+	.footer-card .list-group {
+		width:90%;
 	}
 }
 
@@ -291,11 +297,6 @@ input[type=text], input[type=email], select {
 		width:48%;
 		display:inline-block;
 		padding:0;
-	}
-	
-	.footer-card {
-		margin-top:10%;
-		width:100%;
 	}
 	
 	.footer-card .list-group {
