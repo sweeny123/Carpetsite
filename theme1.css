@@ -9,10 +9,7 @@
 
 /*** color pallette  **********************
 
-#d70504 - bright red
-#8c6d73 (140,109,115) - light purple
-#4b86cb - blue
-#dddbdc - grey - light
+#b8b894 - tan
 #080401 - black
 */
 
@@ -28,6 +25,8 @@ h5, h6 {
 	color:#b8b894;
 	font-family: 'Aref Ruqaa',serif;
 }
+
+
 
 /*************************** GALLERY PAGE STYLES *********************************/
 
@@ -66,9 +65,9 @@ p, a, label, input {
 }
 
 /***************************** LINK STYLES ************************************/
-a {
+a, .dropdown a {
 	text-decoration:none;
-	color:#4b86cb;
+	color:#4b86cb !important;
 	font-weight:500;
 }
 
@@ -154,7 +153,6 @@ footer p {
 
 .card-header, .card-footer {
 	border:none;
-	background-color:#ffffff;
 }
 
 .card-body img {
@@ -165,7 +163,7 @@ footer p {
 	position:relative;
 }
 
-.card-img-overlay, .card .container, .card-body, .container-fluid {
+.card-img-overlay, .card .container, .card-body, .container-fluid, .container {
 	padding:0;
 }
 
@@ -177,9 +175,10 @@ footer p {
 	background-color:#ffffff;
 }
 
-.nav-item{
-	line-height: 35px;
+.dropdown a {
+	padding:0;
 }
+
 
 /**************************** CONTACT US FORM *****************************/
 
@@ -254,10 +253,7 @@ input[type=text], input[type=email], select {
 /* Small devices (landscape phones, 576px and up)*/
 	@media screen and (min-width: 576px) { 
 
-	.btn{
-		top: -40px;
-		
-	}
+	
 	
 	.jumbotron {
 		background-color:#ffffff;
@@ -265,6 +261,11 @@ input[type=text], input[type=email], select {
 	
 	.footer-card .list-group {
 		width:90%;
+	}
+	
+		
+	.card-header h3 {
+		font-size:1.2em;
 	}
 }
 
@@ -299,23 +300,20 @@ input[type=text], input[type=email], select {
 	.footer-card .list-group {
 		width:90%;
 	}
+	
+	.list-group-item {
+		border:none;
+	}
 }
 
 /* Large devices (desktops, 992px and up)*/
 	@media screen and (min-width: 992px) { 
-	nav h2 a{
-		padding-left:25%;
-	}
-
-	.jumbotron-fluid img {
-		
-	}
+	
 	
 	.jumbotron {
 		background-color:#ffffff;
 		
 	}
-
 
 	.navbar-collapse li {
 		width: 100%;
@@ -328,6 +326,10 @@ input[type=text], input[type=email], select {
 		width:48%;
 		display:inline-block;
 		padding:0;
+	}
+	
+	footer .row {
+		margin-top:5%;
 	}
 	
 	.footer-card .list-group {

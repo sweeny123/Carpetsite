@@ -40,7 +40,7 @@
 	
 		<header>	
 			<!-- navigation-->
-			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light">
+			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light" >
 			
 				<a class="navbar-brand" href="#"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,11 +49,11 @@
 				
 				<div class="collapse navbar-collapse " id="navbarSupportedContent" >
 				
-				<ul class="navbar-nav ">
-					<li class="nav-item col-md-2 ">
+				<ul class="navbar-nav nav-fill w-100">
+					<li class="nav-item" >
 						<a href='../index.html'>Home</a>
 					</li>
-					<li class="nav-item col-md-2" >
+					<li class="nav-item" >
 						<a href='about.html'>About</a>
 					</li>
 					<li class="nav-item dropdown" >
@@ -64,27 +64,28 @@
 							<a class="dropdown-item" href="gallery.php?3">Our Services</a>
 						</div><!--closes dropdown-->
 					</li>
-					<li class="nav-item col-md-2">
-						<a href='gallery.html'>Gallery</a>
+					<li class="nav-item" >
+						<a href='gallery.php?1'>Gallery</a>
 					</li>
-					<li class="nav-item col-md-2" >
+					<li class="nav-item" >
 						<a href='faq.html' >FAQs</a>
 					</li>
-					<li class="nav-item col-md-2">
-						<a href='quote.html'>Contact</a>
+					<li class="nav-item" >
+						<a href='quote.html' >Contact</a>
 					</li>
-					<li class="nav-item col-md-3">
+					<li class="nav-item" >
 						<a href="tel:5852719050">(585) 271-9050</a>
 					</li>
 					<li>
-						<h2><a href="#" class="fa fa-facebook"  ></a></h2>
+						<h3><a href="#" class="fa fa-facebook"></a></h3>
 					</li>
 					<li>
-						<h2><a href="#" class="fa fa-twitter" ></a></h2>
+						<h3><a href="#" class="fa fa-twitter" ></a></h3>
 					</li>
 					<li>
-						<h2><a href="#" class="fa fa-instagram" ></a></h2>
+						<h3><a href="#" class="fa fa-instagram" ></a></h3>
 					</li>
+					
 				</ul>
 				</div><!-- closes collapse div-->
 			</nav><!--closes nav-->
@@ -157,11 +158,11 @@
 		
 		
 		</div><!--closes page-content-->
-	</div><!--closes container-fluid-->
 		
-		<footer>
+		<footer class="container">
+			<div class="row">
 			<!-- address, contact info-->
-			<div class="card">
+			<div class="card col-md-6 col-sm-12">
 				<div class="card-body">
 				<ul class="list-group text-center">
 					<li class="list-group-item">
@@ -190,7 +191,7 @@
 				</ul>
 				</div><!--closes card body-->
 			</div><!--closes card-->
-			<div class="card">
+			<div class="card  col-md-6 col-sm-12">
 				<div class="card-body">
 				<ul class="list-group text-center">
 					<li class="list-group-item">
@@ -207,17 +208,21 @@
 					</li>	
 				</ul>
 				</div><!--closes card body-->
-			</div<!--Closes Card-->
+			</div><!--Closes Card-->
+			</div><!--Closes row-->
+			
+			<div class="row">
+			<div class="card col-md-12 col-sm-12">
+				<div class="card-body">
+					<ul class="list-group text-center">
+						<li class="list-group-item">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2909.762150496734!2d-77.62183618451778!3d43.172516579140634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6b4462c7319e3%3A0xaffbeea96c528478!2s850+St+Paul+St+%2335%2C+Rochester%2C+NY+14605!5e0!3m2!1sen!2sus!4v1538688343815"  frameborder="0" style="border:0" allowfullscreen></iframe>
+						<li>
+					</ul>
+				</div><!--closes card body-->
+			</div><!--Closes card-->
+			</div><!--ends row-->
 		</footer>
-		<div class="card footer-card">
-			<div class="card-body">
-				<ul class="list-group text-center">
-					<li class="list-group-item">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2909.762150496734!2d-77.62183618451778!3d43.172516579140634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6b4462c7319e3%3A0xaffbeea96c528478!2s850+St+Paul+St+%2335%2C+Rochester%2C+NY+14605!5e0!3m2!1sen!2sus!4v1538688343815" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-					<li>
-				</ul>
-			</div><!--closes card body-->
-		</div><!--Closes card-->
 	</div><!--closes container-fluid-->
 	
 	<script src='../js/animateHeadings.js'></script> 	

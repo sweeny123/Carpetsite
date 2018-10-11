@@ -19,16 +19,22 @@ p {
 	font-size:0.95em;
 }
 
+/*overrides for button text color*/
+.btn-info {
+	color:#ffffff !important;
+}
+
 /*styles for header*/
 
 .jumbotron {
-	
+	background-image:url(media/Header/headerimage.jpg);
+	background-attachment:fixed;
+	background-size: 100% 100%;
+	padding-bottom:40%;
 }
 
 .header {
-	background-image:url(media/R.BoundCarpet/area.grey.jpg);
-	background-attachment:fixed;
-	background-size: 100% 100%;
+	
 }
 
 /*styles for footer*/
@@ -38,115 +44,7 @@ p {
 		margin-top:-5%;
 	}
 
-
-
-/*styles for cards on site*/
-
-.index-card-1 {
-	
-}
-
-.index-card-1 a{
-	margin-top:40%;
-}
-
-.index-card-1 p{
-	top:50%; 
-	width:90%;
-}
-
-.index-card-2 {
-	
-}
-
-.index-card-2 a{
-	margin-top:45%;
-}
-
-.index-card-2 p{
-	top:50%;
-    width:90%;	
-}
-
-.index-card-3 {
-	
-}
-
-.index-card-3 a{
-	margin-top:50%;
-}
-
-.index-card-3 p{
-	top:50%; 
-	width:80%;
-}
-	
-.index-card-4 {
-	
-}
-
-.index-card-4 a{
-	margin-top:50%;
-}
-
-.index-card-4 p{
-	top:50%; 
-	width:80%;
-}
-	
-.index-card-5 {
-
-}
-
-.index-card-5 a{
-	margin-top:50%;
-}
-
-.index-card-5 p{
-	top:50%; 
-	width:80%;
-}
-	
-.index-card-6 {
-
-}
-
-.index-card-6 a{
-	margin-top:40%;
-}
-
-.index-card-6 p{
-	top:50%; 
-	width:80%;
-}
-
-.services-card-1 {
-	
-}
-
-.services-card-1 a{
-	margin-top:40%;
-}
-
-.services-card-1 p{
-	top:50%;
-	width:90%;
-}
-
-.services-card-2 {
-	
-}
-
-.services-card-2 a{
-	margin-top:40%;
-}
-
-.services-card-2 p{
-	top:50%;
-	width:90%;
-}
-
-.card{
+.card {
 	border:none;
 	margin-bottom:5%;
 }
@@ -163,20 +61,11 @@ p {
 
 /*styles for nav*/
 
-nav {
-
-	
-}
-
 #nav{
 	background-color:#ffffff; /* needs to be same color as navbar-nav BG color*/
 	padding: 0px;
-	
 }
 
-.navbar-nav {
-	
-}
 .navbar-brand{
 	margin-right:0px;
 }
@@ -263,223 +152,22 @@ input[type=text], input[type=email], select {
 
 	@media screen and (min-width: 576px){
 	
-	}
+}
 
 	@media screen and (min-width: 768px) /* Desktop */ {
     
 	
-	.index-card-1 {
-	
-	}
-
-	.index-card-1 a {
-		margin-top:50%;
-	}
-
-	.index-card-1 p {
-		top:50%; 
-		width:80%;
-	}
-
-	.index-card-2 {
-	
-	}
-
-	.index-card-2 a{
-		margin-top:50%;
-	}
-
-	.index-card-2 p{
-		top:50%; 
-		width:80%;
-	}
-	
-	.index-card-3 {
-	
-	}
-
-	.index-card-3 a{
-		margin-top:50%;
-	}
-
-	.index-card-3 p{
-		top:50%; 
-		width:80%;
-	}
-	
-	.index-card-4 {
-	
-	}
-
-	.index-card-4 a{
-		margin-top:50%;
-	}
-
-	.index-card-4 p{
-		top:50%; 
-		width:80%;
-	}
-	
-	.index-card-5 {
-	
-	}
-
-	.index-card-5 a{
-		margin-top:50%;
-	}
-
-	.index-card-5 p{
-		top:50%; 
-		width:80%;
-	}
-	
-	.index-card-6 {
-	
-	}
-
-	.index-card-6 a{
-		margin-top:50%;
-	}
-
-	.index-card-6 p{
-		top:60%; 
-		width:80%;
-	}
-	
-	
-	
-	.services-card-2 a {
-		margin-top:45%;
-	}
-	
-	.pricing-card-1 {
-		margin-left:15%;
-	}
 }
 
 	@media screen  and (min-width: 992px) /* Tablet */ {
 		
 		
-	/*header styles*/
 	
-	.headertext {
-		width:50%;
-		float:left;
-	}
-
-	.headerlogo {
-		width:45%;
-		float:right;
-	}
-	
-	
-		
-	/*styles for cards on site*/
-	
-	.index-card-1 {
-	
-	}
-
-	.index-card-1 a {
-		margin-top:50%;
-	}
-
-	.index-card-1 p {
-		top:50%; 
-		width:80%;
-	}
-
-	.index-card-2 {
-	
-	}
-
-	.index-card-2 a{
-		margin-top:50%;
-	}
-
-	.index-card-2 p{
-		top:50%; 
-		width:80%;
-	}
-	
-	.index-card-3 {
-	
-	}
-
-	.index-card-3 a{
-		margin-top:50%;
-	}
-
-	.index-card-3 p{
-		top:50%; 
-		width:80%;
-	}
-	
-	.index-card-4 {
-	
-	}
-
-	.index-card-4 a{
-		margin-top:50%;
-	}
-
-	.index-card-4 p{
-		top:50%; 
-		width:80%;
-	}
-	
-	.index-card-5 {
-	
-	}
-
-	.index-card-5 a{
-		margin-top:50%;
-	}
-
-	.index-card-5 p{
-		top:50%; 
-		width:80%;
-	}
-	
-	.index-card-6 {
-	
-	}
-
-	.index-card-6 a{
-		margin-top:50%;
-	}
-
-	.index-card-6 p{
-		top:50%; 
-		width:80%;
-	}
-
-	.services-card-1 {
-		
-	}
-
-	.services-card-1 a{
-		margin-top:40%;
-	}
-
-	.services-card-1 p{
-		top:50%; 
-		left:10%; 
-		width:80%;
-	}
-
-	.services-card-2 {
-		
-	}
-
-	.services-card-2 a{
-		margin-top:40%;
-	}
-
-	.services-card-2 p{
-		top:50%; 
-		left:10%; 
-		width:80%;
+	.jumbotron {
+		background-size:90%;
+		background-repeat:no-repeat;
+		background-position:center;
+		background-attachment:fixed;
 	}
 
 }
