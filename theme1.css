@@ -29,6 +29,37 @@ h5, h6 {
 	font-family: 'Aref Ruqaa',serif;
 }
 
+/*************************** GALLERY PAGE STYLES *********************************/
+
+#gallerybuttons {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#gallerybuttons button {
+	font-weight:600;
+}
+
+.gallerycontainer {
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5%;
+    margin-bottom:5%;
+}
+
+.gallery {
+	padding:0;
+	margin-left:3%;
+}
+
+.opaque {
+	opacity:1;
+}
+
+.clear {
+	opacity:0;
+}
+
 /*************************** TEXT TAG STYLES *************************************/
 p, a, label, input {
 	font-family: 'Taviraj', serif;
@@ -306,6 +337,20 @@ input[type=text], input[type=email], select {
 	.footer-card .list-group-item {
 		border:none;
 		
+	}
+
+	#gallerybuttons button {
+		font-weight:600;		
+	}
+
+	.gallerycontainer {
+		margin-top:5%;
+		margin-bottom:5%;
+	}
+
+	.gallery {
+		padding:0;
+		margin-left:3%;
 	}
 
 }

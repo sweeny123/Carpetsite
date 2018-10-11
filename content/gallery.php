@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>About</title>
+	<title>Gallery</title>
 	<link rel="icon" href="#"><!-- used for icon in tab-->
 	
 	<!--BOOTSTRAP 4-->
@@ -25,22 +25,31 @@
 	
 	<!-- CSS containing social media icons:  Reference https://www.w3schools.com/howto/howto_css_social_media_buttons.asp for more info -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
-
-	<!--site specific stylesheet-->
-	<link rel="stylesheet" type="text/css" href="../theme1.css">	
-
+	
+	<!--theme stylesheet-->
+	<link rel="stylesheet" type="text/css" href="../theme1.css">
+	
 	<!--site specific stylesheet-->
 	<link rel="stylesheet" type="text/css" href="../styles.css">
 	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	
+	<!--this script will take the buttonVar number and select a button-->
+	<script src="../js/buttonSelector.js"></script>
 </head>
 
-<body>
+<body onload="buttonSelector();">
     
 	<div class="container-fluid">
 	
-		<header>	
+		<header>
+				
+			<!--scripts for gallery buttons-->
+  	  	  	  <script src="../js/toggleResidential.js"></script>
+	  	  	  <script src="../js/toggleCommercial.js"></script>
+		  	  <script src="../js/toggleServices.js"></script>
+			  
 			<!-- navigation-->
-			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light" style="padding: 0px">
+			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light" >
 			
 				<a class="navbar-brand" href="#"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +62,7 @@
 					<li class="nav-item col-md-2 ">
 						<a href='../index.html'>Home</a>
 					</li>
-					<li class="nav-item col-md-2 active" >
+					<li class="nav-item col-md-2" >
 						<a href='about.html'>About</a>
 					</li>
 					<li class="nav-item dropdown" >
@@ -64,7 +73,7 @@
 							<a class="dropdown-item" href="gallery.php?3">Our Services</a>
 						</div><!--closes dropdown-->
 					</li>
-					<li class="nav-item col-md-2">
+					<li class="nav-item col-md-2 active">
 						<a href='gallery.html'>Gallery</a>
 					</li>
 					<li class="nav-item col-md-2" >
@@ -102,7 +111,114 @@
 			</div>
 		</header><!--closes header-->
 		
-		
+		<div class="page-content">
+			<div id="gallerybuttons" class="container">
+				<div class="row">
+					<div class="col-lg-0 col-md-0 col-sm-1"></div>
+					<button id="residentialbutton" class="btn btn-secondary col-md-3 col-sm-3 gallerybutton" onclick="toggleResidential();">Residential</button>
+					<div class="col-lg-0 col-md-0 col-sm-1"></div>
+					<button id="commercialbutton" class="btn btn-secondary col-md-3 col-sm-3 gallerybutton" onclick="toggleCommercial();">Commercial</button>
+					<div class="col-lg-0 col-md-0 col-sm-1"></div>
+					<button id="servicesbutton" class="btn btn-secondary col-md-3 col-sm-3 gallerybutton" onclick="toggleServices();">Services</button>
+				</div><!--closes row-->
+   			</div><!--closes gallerybuttons-->
+			
+			
+			<div id="residential" class="gallerycontainer col-10 opaque">
+			<?php
+				
+				$residential_folder_path = '../media/BoundCarpet/'; //residential images folder path
+				$num_residential_files = glob($residential_folder_path . "*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE);//grabs all the images in the directory
+
+				$residential_folder = opendir($residential_folder_path);//opens the directory
+				
+				if($num_residential_files > 0)
+					{
+					while(false !== ($residential_file = readdir($residential_folder))) //reads directory to get file name, stops when there are no more images
+						{
+						$residential_file_path = $residential_folder_path.$residential_file;// get an image
+						$residential_extension = strtolower(pathinfo($residential_file_path ,PATHINFO_EXTENSION));//returns only the extension
+						if($residential_extension=='jpg' || $residential_extension =='png' || $residential_extension == 'gif' || $residential_extension == 'bmp' || $residential_extension == 'jpeg') //if there is an image of any of these types......
+							{
+			?>       
+							<img src="<?php echo $residential_file_path;?>" class="gallery img-thumbnail col-md-3 col-sm-12"/>
+							
+			<?php
+							} 
+						}
+					}
+				else
+				{
+					echo "the folder was empty !";
+				}
+				closedir($residential_folder);
+			?>
+			</div><!--closes gallerycontainer-->
+			
+			<div id="commercial" class="gallerycontainer col-10 opaque">
+			<?php
+				
+				$commercial_folder_path = '../media/CommercialCarpet/'; //commercial images folder path
+				$num_commercial_files = glob($commercial_folder_path . "*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE);//grabs all the images in the directory
+
+				$commercial_folder = opendir($commercial_folder_path);//opens the directory
+				
+				if($num_commercial_files > 0)
+					{
+					while(false !== ($commercial_file = readdir($commercial_folder))) //reads directory to get file name, stops when there are no more images
+						{
+						$commercial_file_path = $commercial_folder_path.$commercial_file;// get an image
+						$commercial_extension = strtolower(pathinfo($commercial_file_path ,PATHINFO_EXTENSION));//returns only the extension
+						if($commercial_extension=='jpg' || $commercial_extension =='png' || $commercial_extension == 'gif' || $commercial_extension == 'bmp' || $commercial_extension == 'jpeg') //if there is an image of any of these types......
+							{
+			?>       
+							<img src="<?php echo $commercial_file_path;?>" class="gallery img-thumbnail col-md-3 col-sm-12"/>
+							
+			<?php
+							} 
+						}
+					}
+				else
+				{
+					echo "the folder was empty !";
+				}
+				closedir($commercial_folder);
+			?>
+			</div><!--closes gallerycontainer-->
+			
+			<div id="services" class="gallerycontainer col-10 opaque">
+			<?php
+				
+				$services_folder_path = '../media/IndoorOutdoor/'; //services images folder path
+				$num_services_files = glob($services_folder_path . "*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE);//grabs all the images in the directory
+
+				$services_folder = opendir($services_folder_path);//opens the directory
+				
+				if($num_services_files > 0)
+					{
+					while(false !== ($services_file = readdir($services_folder))) //reads directory to get file name, stops when there are no more images
+						{
+						$services_file_path = $services_folder_path.$services_file;// get an image
+						$services_extension = strtolower(pathinfo($services_file_path ,PATHINFO_EXTENSION));//returns only the extension
+						if($services_extension=='jpg' || $services_extension =='png' || $services_extension == 'gif' || $services_extension == 'bmp' || $services_extension == 'jpeg') //if there is an image of any of these types......
+							{
+			?>       
+							<img src="<?php echo $services_file_path;?>" class="gallery img-thumbnail col-md-3 col-sm-12"/>
+							
+			<?php
+							} 
+						}
+					}
+				else
+				{
+					echo "the folder was empty !";
+				}
+				closedir($services_folder);
+			?>
+			</div><!--closes gallerycontainer-->
+			
+			
+		</div><!--closes page-content-->
 		
 		<footer>
 			<!-- address, contact info-->
@@ -165,8 +281,7 @@
 		</div><!--Closes card-->
 	</div><!--closes container-fluid-->
 	
-
-	<script src='./js/animateHeadings.js'></script>
+	<script src='../js/animateHeadings.js'></script> 	
 		
 </body>
 </html>

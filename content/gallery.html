@@ -98,23 +98,47 @@
 		</header><!--closes header-->
 		
 		<div class="page-content">
-		<div class="card pricing-card-1">
-			<div class="card-header">
-				<h2 class="card-title">Pricing</h2>
-			</div>
-			<div class="card-body">
-				<p>A great value is our goal! Please see below for pricing information.</p>
-			</div><!--closes card-body-->
-			<ul class="list-group">
-				<li class="list-group-item"><h2>$60 Hourly rate</h2></li>
-				<li class="list-group-item"><h2>$12 Per tire Mounting</h2></li>
-				<li class="list-group-item"><h2>Half hour minimum for road side assistance ($30)</h2></li>
-				<li class="list-group-item"><h2>Pick Up and Delivery service is $25</h2></li>
-			</ul>
-			<div class="card-footer">
-				<a class="btn btn-info" href="quote.html">Request A Quote</a>
-			</div><!--closes card-footer-->
-		</div><!--closes card-->
+			<div id="gallerybuttons">
+		  		<button id="residentialbutton" class="btn btn-secondary gallerybutton" onclick="toggleResidential();">Residential</button>
+		  		<button id="commercialbutton" class="btn btn-secondary gallerybutton" onclick="toggleCommercial();">Commercial</button>
+   			</div><!--closes gallerybuttons-->
+			
+			<?php
+				
+				
+				$residential_folder_path = '../media/residential/'; //residential images folder path
+				$num_residential_files = glob($residential_folder_path . "*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE);//grabs all the images in the directory
+
+				$residential_folder = opendir($residential_folder_path);//opens the directory
+				
+				if($num_residential_files > 0)
+					{
+					while(false !== ($residential_file = readdir($residential_folder))) //reads directory to get file name, stops when there are no more images
+						{
+						$residential_file_path = $residential_folder_path.$residential_file;// get an image
+						$residential_extension = strtolower(pathinfo($residential_file_path ,PATHINFO_EXTENSION));//returns only the extension
+						if($residential_extension=='jpg' || $residential_extension =='png' || $residential_extension == 'gif' || $residential_extension == 'bmp' || $residential_extension == 'jpeg') //if there is an image of any of these types......
+							{
+			?>
+           
+							<!--output statement -->
+							<div class="gallerypictures clear residentialpictures">
+								<a href="*"><img src="<?php echo $residential_file_path;?>" onclick="lightBoxSwitch();" class="gallery residentialingpictures"/></a>
+							</div>
+            
+			<?php
+							} 
+						}
+					}
+			else
+			{
+				echo "the folder was empty !";
+			}
+			closedir($residential_folder);
+			?>
+			
+			
+			
 		</div><!--closes page-content-->
 		
 		<footer>
