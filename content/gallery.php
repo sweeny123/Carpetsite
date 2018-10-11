@@ -35,6 +35,11 @@
 	
 	<!--this script will take the buttonVar number and select a button-->
 	<script src="../js/buttonSelector.js"></script>
+	
+	<!--Ekko Lightbox declaration-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+
 </head>
 
 <body onload="buttonSelector();">
@@ -125,6 +130,7 @@
 			
 			
 			<div id="residential" class="gallerycontainer col-10 opaque">
+				<h2 class="text-center">Residential</h2>
 			<?php
 				
 				$residential_folder_path = '../media/BoundCarpet/'; //residential images folder path
@@ -141,8 +147,9 @@
 						if($residential_extension=='jpg' || $residential_extension =='png' || $residential_extension == 'gif' || $residential_extension == 'bmp' || $residential_extension == 'jpeg') //if there is an image of any of these types......
 							{
 			?>       
+							<a href="<?php echo $residential_file_path;?>" data-toggle="lightbox" data-gallery="residential-gallery" data-type="image">
 							<img src="<?php echo $residential_file_path;?>" class="gallery img-thumbnail col-md-3 col-sm-12"/>
-							
+							</a>
 			<?php
 							} 
 						}
@@ -156,6 +163,7 @@
 			</div><!--closes gallerycontainer-->
 			
 			<div id="commercial" class="gallerycontainer col-10 opaque">
+				<h2 class="text-center">Commercial</h2>
 			<?php
 				
 				$commercial_folder_path = '../media/CommercialCarpet/'; //commercial images folder path
@@ -172,8 +180,9 @@
 						if($commercial_extension=='jpg' || $commercial_extension =='png' || $commercial_extension == 'gif' || $commercial_extension == 'bmp' || $commercial_extension == 'jpeg') //if there is an image of any of these types......
 							{
 			?>       
+							<a href="<?php echo $commercial_file_path;?>" data-toggle="lightbox" data-gallery="commercial-gallery" data-type="image">
 							<img src="<?php echo $commercial_file_path;?>" class="gallery img-thumbnail col-md-3 col-sm-12"/>
-							
+							</a>
 			<?php
 							} 
 						}
@@ -187,6 +196,7 @@
 			</div><!--closes gallerycontainer-->
 			
 			<div id="services" class="gallerycontainer col-10 opaque">
+				<h2 class="text-center">Services</h2>
 			<?php
 				
 				$services_folder_path = '../media/IndoorOutdoor/'; //services images folder path
@@ -203,8 +213,9 @@
 						if($services_extension=='jpg' || $services_extension =='png' || $services_extension == 'gif' || $services_extension == 'bmp' || $services_extension == 'jpeg') //if there is an image of any of these types......
 							{
 			?>       
+							<a href="<?php echo $services_file_path;?>" data-toggle="lightbox" data-gallery="services-gallery" data-type="image">
 							<img src="<?php echo $services_file_path;?>" class="gallery img-thumbnail col-md-3 col-sm-12"/>
-							
+							</a>
 			<?php
 							} 
 						}
@@ -281,7 +292,9 @@
 		</div><!--Closes card-->
 	</div><!--closes container-fluid-->
 	
-	<script src='../js/animateHeadings.js'></script> 	
+	<script src='../js/animateHeadings.js'></script> 
+	<script src='../js/lightBox.js'></script>
+	
 		
 </body>
 </html>

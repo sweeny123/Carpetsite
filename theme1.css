@@ -256,7 +256,7 @@ input[type=text], input[type=email], select {
 
 	.btn{
 		top: -40px;
-		z-index: 2000;
+		
 	}
 	
 	.jumbotron {
