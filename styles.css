@@ -30,7 +30,7 @@ p {
 	background-image:url(media/Header/headerimage.jpg);
 	background-attachment:fixed;
 	background-size: 100% 100%;
-	padding-bottom:40%;
+	padding-bottom:80%;
 }
 
 
@@ -152,13 +152,17 @@ input[type=text], input[type=email], select {
 }
 
 	@media screen and (min-width: 768px) /* Desktop */ {
-    
+    .header {
+		margin-bottom:10%;
+	}
 	
 }
 
 	@media screen  and (min-width: 992px) /* Tablet */ {
 		
-		
+	.header {
+		margin-bottom:10%;
+	}
 	
 	.jumbotron {
 		background-size:90%;
@@ -170,8 +174,10 @@ input[type=text], input[type=email], select {
 }
 
 	@media screen and (min-width: 1200px) {
-		
+	.header {
+	margin-bottom:20%;
 	}
+}
 
 
   

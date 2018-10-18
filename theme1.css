@@ -7,6 +7,7 @@
 }
 
 
+
 /*** color pallette  **********************
 
 #b8b894 - tan
@@ -97,7 +98,6 @@ a:hover {
 
 .jumbotron img {
 	max-width:23%;
-	margin-left:-2%;
 }
 
 .jumbotron {
@@ -273,8 +273,8 @@ input[type=text], input[type=email], select {
 
 /* Medium devices (tablets, 768px and up)*/
 	@media screen and (min-width: 768px) { 
-	.jumbotron-fluid img {
-		
+	.jumbotron img {
+		margin-left:-2%;
 	}
 	
 	.jumbotron {
@@ -297,6 +297,7 @@ input[type=text], input[type=email], select {
 	footer .card {
 		width:100%;
 		padding-top:0%;
+		
 	}
 	
 	.footer-card .list-group {
@@ -314,7 +315,10 @@ input[type=text], input[type=email], select {
 	
 	.jumbotron {
 		background-color:#ffffff;
-		
+	}
+	
+	.jumbotron img {
+		margin-left:-2%;
 	}
 
 	.navbar-collapse li {
@@ -361,11 +365,10 @@ input[type=text], input[type=email], select {
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media screen and (min-width: 1200px) { 
-.jumbotron-fluid img {
-		
+	
+	.jumbotron img {
+		margin-left:-2%;
 	}
-	
-	
 	
 	nav a {
 		
