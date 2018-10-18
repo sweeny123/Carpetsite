@@ -33,6 +33,7 @@ h5, h6 {
 #gallerybuttons {
 	margin-left:auto;
 	margin-right:auto;
+	margin-top:4%;
 }
 
 #gallerybuttons button {
@@ -95,11 +96,12 @@ a:hover {
 /***************************** HEADER STYLES ******************************/
 
 .jumbotron img {
-	max-width:100%;
-	
+	max-width:23%;
+	margin-left:-2%;
 }
 
 .jumbotron {
+	padding-top:0;
 	background-color:#ffffff;
 }
 

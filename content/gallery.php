@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Gallery</title>
-	<link rel="icon" href="#"><!-- used for icon in tab-->
+	<link rel="shortcut icon" type="image/png" href="../favicon.png"><!-- used for icon in tab-->
 	
 	<!--BOOTSTRAP 4-->
 	<!-- Latest compiled and minified CSS -->
@@ -71,15 +71,15 @@
 						<a href='about.html'>About</a>
 					</li>
 					<li class="nav-item dropdown" >
-						<a class="nav-item nav-link dropdown-toggle" href='#' id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+						<a class="nav-item active nav-link dropdown-toggle" href='#' id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-							<a class="dropdown-item" href="gallery.php?1">Residential</a>
-							<a class="dropdown-item" href="gallery.php?2">Commercial</a>
-							<a class="dropdown-item" href="gallery.php?3">Our Services</a>
+							<a class="dropdown-item" href="gallery.php?1">Carpet</a>
+							<a class="dropdown-item" href="gallery.php?2">Flooring</a>
+							<a class="dropdown-item" href="gallery.php?3">Indoor/Outdoor</a>
 						</div><!--closes dropdown-->
 					</li>
-					<li class="nav-item active" >
-						<a href='gallery.php?1'>Gallery</a>
+					<li class="nav-item" >
+						<a href='services.html'>Services</a>
 					</li>
 					<li class="nav-item" >
 						<a href='faq.html' >FAQs</a>
@@ -104,37 +104,46 @@
 				</div><!-- closes collapse div-->
 			</nav><!--closes nav-->
 			
-			<div  class="jumbotron jumbotron-fluid header " >
+			<div  class="jumbotron jumbotron-fluid" >
 				<div class="container" >
-					<h1>Wagner Carpets</h1> 
-						<h2></h2>
-						<h5>Formerly known as Cliff Kemp Carpet and Flooring</h5>
-						<h6><a href="tel:5852719050">(585) 271-9050</a></h6>
-						<h6><a href="mailto:info@wagnercarpetsroc.com">info@wagnercarpetsroc.com</a></h6>
-						<a href="quote.html" class="btn btn-info">Got a Question?</a>
+					<img src="../media/WClogo/WClogoClear.png" alt="company logo"> 
 				</div>
 				
 			</div>
 		</header><!--closes header-->
 		
 		<div class="page-content">
-			<div id="gallerybuttons" class="container">
+			
+			<div class="container">
 				<div class="row">
-					<div class="col-lg-0 col-md-0 col-sm-1"></div>
-					<button id="residentialbutton" class="btn btn-secondary col-md-3 col-sm-3 gallerybutton" onclick="toggleResidential();">Residential</button>
-					<div class="col-lg-0 col-md-0 col-sm-1"></div>
-					<button id="commercialbutton" class="btn btn-secondary col-md-3 col-sm-3 gallerybutton" onclick="toggleCommercial();">Commercial</button>
-					<div class="col-lg-0 col-md-0 col-sm-1"></div>
-					<button id="servicesbutton" class="btn btn-secondary col-md-3 col-sm-3 gallerybutton" onclick="toggleServices();">Services</button>
+					<div class="col-sm-10 col-md-4"></div>
+					<h2 class="display-4 text-center col-sm-0 col-md-4">Gallery</h2>
 				</div><!--closes row-->
-   			</div><!--closes gallerybuttons-->
+			</div><!--closes container-->
+			
+			<div class="container"><p>  </p></div>
+			
+			<div class="container w-100">
+				<div class="row">
+					<div id="gallerybuttons" class="container">
+						<div class="row">
+							<div class="col-md-2 col-sm-0"></div>
+							<button id="residentialbutton" class="btn btn-secondary col-md-2 col-sm-3 gallerybutton" onclick="toggleResidential();">Carpet</button>
+							<div class="col-md-1 col-sm-1"></div>
+							<button id="commercialbutton" class="btn btn-secondary col-md-2 col-sm-3 gallerybutton" onclick="toggleCommercial();">Flooring</button>
+							<div class="col-md-1 col-sm-1"></div>
+							<button id="servicesbutton" class="btn btn-secondary col-md-2 col-sm-3 gallerybutton" onclick="toggleServices();">Indoor/Outdoor</button>
+						</div><!--closes row-->
+					</div><!--closes gallerybuttons-->
+				</div><!--closes row-->
+			</div><!--closes container-->
 			
 			
 			<div id="residential" class="gallerycontainer col-10 opaque">
-				<h2 class="text-center">Residential</h2>
+				<h2 class="text-center">Carpet</h2>
 			<?php
 				
-				$residential_folder_path = '../media/BoundCarpet/'; //residential images folder path
+				$residential_folder_path = '../media/ResidentialCarpet/'; //residential images folder path
 				$num_residential_files = glob($residential_folder_path . "*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE);//grabs all the images in the directory
 
 				$residential_folder = opendir($residential_folder_path);//opens the directory
@@ -164,10 +173,10 @@
 			</div><!--closes gallerycontainer-->
 			
 			<div id="commercial" class="gallerycontainer col-10 opaque">
-				<h2 class="text-center">Commercial</h2>
+				<h2 class="text-center">Flooring</h2>
 			<?php
 				
-				$commercial_folder_path = '../media/CommercialCarpet/'; //commercial images folder path
+				$commercial_folder_path = '../media/ResidentialHardSurface/'; //commercial images folder path
 				$num_commercial_files = glob($commercial_folder_path . "*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE);//grabs all the images in the directory
 
 				$commercial_folder = opendir($commercial_folder_path);//opens the directory
@@ -197,7 +206,7 @@
 			</div><!--closes gallerycontainer-->
 			
 			<div id="services" class="gallerycontainer col-10 opaque">
-				<h2 class="text-center">Services</h2>
+				<h2 class="text-center">Indoor/ Outdoor</h2>
 			<?php
 				
 				$services_folder_path = '../media/IndoorOutdoor/'; //services images folder path

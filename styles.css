@@ -26,16 +26,13 @@ p {
 
 /*styles for header*/
 
-.jumbotron {
+.header {
 	background-image:url(media/Header/headerimage.jpg);
 	background-attachment:fixed;
 	background-size: 100% 100%;
 	padding-bottom:40%;
 }
 
-.header {
-	
-}
 
 /*styles for footer*/
 
