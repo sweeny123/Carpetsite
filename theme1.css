@@ -62,7 +62,7 @@ h5, h6 {
 }
 
 /*************************** TEXT TAG STYLES *************************************/
-p, a, label, input {
+p, a, label, input, li {
 	font-family: 'Taviraj', serif;
 }
 
