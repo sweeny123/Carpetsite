@@ -10,7 +10,7 @@
 
 <?php
 //correct email address: 
-$email_to = "info@wagnercarpetsroc.com";
+$email_to = "wagnercarpets@gmail.com";
 $email_subject = "Customer Information Request";
  
 // Escape user inputs for security - references the name attribute on the contact page in the POST 
