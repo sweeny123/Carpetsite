@@ -28,7 +28,7 @@ p {
 
 .header {
 	background-image:url(media/Header/headerimage.jpg);
-	background-attachment:fixed;
+	
 	background-size: 100% 100%;
 	padding-bottom:80%;
 }
@@ -148,13 +148,16 @@ input[type=text], input[type=email], select {
 /* Small devices (landscape phones, 576px and up)*/
 
 	@media screen and (min-width: 576px){
-	
+		.header {
+			background-attachment:scroll;
+		}
 }
 
 	@media screen and (min-width: 768px) /* Desktop */ {
-    .header {
-		margin-bottom:10%;
-	}
+		.header {
+			margin-bottom:10%;
+			background-attachment:scroll;
+		}
 	
 }
 
@@ -162,20 +165,22 @@ input[type=text], input[type=email], select {
 		
 	.header {
 		margin-bottom:10%;
+		background-attachment:fixed;
 	}
 	
 	.jumbotron {
 		background-size:90%;
 		background-repeat:no-repeat;
 		background-position:center;
-		background-attachment:fixed;
+		
 	}
 
 }
 
 	@media screen and (min-width: 1200px) {
 	.header {
-	margin-bottom:20%;
+		margin-bottom:20%;
+		background-attachment:fixed;
 	}
 }
 
