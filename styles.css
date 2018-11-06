@@ -140,6 +140,13 @@ input[type=text], input[type=email], select {
 
 .link-container .card-title {
 		font-size:1.1em;
+}
+	
+/********************GALLERY PAGE STYLES************************************/
+
+	#gallerybuttons button{
+		font-size:0.8em;
+		font-weight:600;
 	}
 
 
@@ -166,7 +173,9 @@ input[type=text], input[type=email], select {
 			background-attachment:scroll;
 		}
 		
-		
+		#gallerybuttons button{
+			font-size:0.7em;
+		}
 }
 
 	@media screen and (min-width: 768px) /* Desktop */ {
@@ -178,7 +187,10 @@ input[type=text], input[type=email], select {
 		.link-container .card-title {
 			font-size:1.8em;
 		}
-	
+		
+		#gallerybuttons button{
+			font-size:0.7em;
+		}	
 }
 
 	@media screen  and (min-width: 992px) /* Tablet */ {
@@ -194,7 +206,11 @@ input[type=text], input[type=email], select {
 		background-position:center;
 		
 	}
-
+	
+	#gallerybuttons button{
+		font-size:1.2em;
+	}
+	
 }
 
 	@media screen and (min-width: 1200px) {
@@ -202,6 +218,11 @@ input[type=text], input[type=email], select {
 		margin-bottom:20%;
 		background-attachment:fixed;
 	}
+	
+	#gallerybuttons button{
+		font-size:1.6em;
+	}
+	
 }
 
 

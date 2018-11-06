@@ -124,18 +124,16 @@
 			<div class="container"><p>  </p></div>
 			
 			<div class="container w-100">
-				<div class="row">
 					<div id="gallerybuttons" class="container">
 						<div class="row">
-							<div class="col-md-2 col-sm-0"></div>
-							<button id="residentialbutton" class="btn btn-secondary col-md-2 col-sm-3 gallerybutton" onclick="toggleResidential();">Carpet</button>
-							<div class="col-md-1 col-sm-1"></div>
-							<button id="commercialbutton" class="btn btn-secondary col-md-2 col-sm-3 gallerybutton" onclick="toggleCommercial();">Flooring</button>
-							<div class="col-md-1 col-sm-1"></div>
-							<button id="servicesbutton" class="btn btn-secondary col-md-2 col-sm-3 gallerybutton" onclick="toggleServices();">Indoor/Outdoor</button>
+							<div class="col-1 col-sm-1 col-md-1 col-lg-1"></div>
+							<button id="residentialbutton" class="btn btn-secondary col-3 col-sm-3 col-md-2 col-lg-2 gallerybutton" onclick="toggleResidential();">Carpet</button>
+							<div class="col-1 col-sm-1 col-md-2 col-lg-2"></div>
+							<button id="commercialbutton" class="btn btn-secondary col-3 col-sm-3 col-md-2 col-lg-2 gallerybutton" onclick="toggleCommercial();">Flooring</button>
+							<div class="col-1 col-sm-1 col-md-2 col-lg-2"></div>
+							<button id="servicesbutton" class="btn btn-secondary col-3 col-sm-3 col-md-2 col-lg-2 gallerybutton" onclick="toggleServices();">Indoor/Outdoor</button>
 						</div><!--closes row-->
 					</div><!--closes gallerybuttons-->
-				</div><!--closes row-->
 			</div><!--closes container-->
 			
 			
