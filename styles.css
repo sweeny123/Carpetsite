@@ -83,6 +83,11 @@ p {
 	border-style: solid !important;
 }
 
+.dropdown-menu {
+		border:none;
+		text-align:center;
+	}
+
 /*styles for image overlay*/
 
 .img-overlay {
@@ -125,8 +130,17 @@ input[type=text], input[type=email], select {
     border-radius: 10px;
 }
 
+/**************************LINK CONTAINER ***********************************/
+
+.link-container .row{
+	margin-right:0px;
+	margin-left:0px;
+}
 
 
+.link-container .card-title {
+		font-size:1.1em;
+	}
 
 
 /*********** mobile specific stylesheet ******
@@ -151,12 +165,18 @@ input[type=text], input[type=email], select {
 		.header {
 			background-attachment:scroll;
 		}
+		
+		
 }
 
 	@media screen and (min-width: 768px) /* Desktop */ {
 		.header {
 			margin-bottom:10%;
 			background-attachment:scroll;
+		}
+		
+		.link-container .card-title {
+			font-size:1.8em;
 		}
 	
 }
