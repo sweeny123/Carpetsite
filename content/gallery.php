@@ -119,9 +119,10 @@
 					<div class="col-sm-10 col-md-4"></div>
 					<h2 class="display-4 text-center col-sm-0 col-md-4">Gallery</h2>
 				</div><!--closes row-->
+				<br/><br/>
 			</div><!--closes container-->
 			
-			<div class="container"><p>  </p></div>
+			
 			
 			<div class="container w-100">
 					<div id="gallerybuttons" class="container">
@@ -137,10 +138,14 @@
 			</div><!--closes container-->
 			
 			
-			<div id="residential" class="gallerycontainer col-10 opaque">
-				<h2 class="text-center">Carpet</h2>
+			<div id="residential" class="gallerycontainer container opaque">
+				<div class="row">
+					<h2 class="text-center col-12">Carpet</h2>
+				</div><!--closes row-->
+				<br/><br/>
+				<div class="row">
 			<?php
-				
+				$row_counter=0;
 				$residential_folder_path = '../media/ResidentialCarpet/'; //residential images folder path
 				$num_residential_files = glob($residential_folder_path . "*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE);//grabs all the images in the directory
 
@@ -155,10 +160,19 @@
 						if($residential_extension=='jpg' || $residential_extension =='png' || $residential_extension == 'gif' || $residential_extension == 'bmp' || $residential_extension == 'jpeg') //if there is an image of any of these types......
 							{
 			?>       
-							<a href="<?php echo $residential_file_path;?>" data-toggle="lightbox" data-gallery="residential-gallery" data-type="image">
-							<img src="<?php echo $residential_file_path;?>" class="gallery img-thumbnail col-md-3 col-sm-12"/>
+							<a href="<?php echo $residential_file_path;?>" data-toggle="lightbox" data-gallery="residential-gallery" data-type="image" class="col-12 col-sm-12 col-md-3 col-lg-3">
+							<img src="<?php echo $residential_file_path;?>" class="gallery img-thumbnail "/>
 							</a>
+							<?php 
+								$row_counter=$row_counter+1;
+								if($row_counter % 4 == 0)
+									{
+							?>
+										</div>
+										<div class="row">
+									
 			<?php
+									}
 							} 
 						}
 					}
@@ -168,12 +182,17 @@
 				}
 				closedir($residential_folder);
 			?>
+				</div><!--closes row-->
 			</div><!--closes gallerycontainer-->
 			
-			<div id="commercial" class="gallerycontainer col-10 opaque">
-				<h2 class="text-center">Flooring</h2>
+			<div id="commercial" class="gallerycontainer container opaque">
+				<div class="row">
+					<h2 class="text-center col-12">Flooring</h2>
+				</div><!--closes row-->
+				<br/><br/>
+				<div class="row">
 			<?php
-				
+				$row_counter=0;
 				$commercial_folder_path = '../media/ResidentialHardSurface/'; //commercial images folder path
 				$num_commercial_files = glob($commercial_folder_path . "*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE);//grabs all the images in the directory
 
@@ -188,10 +207,18 @@
 						if($commercial_extension=='jpg' || $commercial_extension =='png' || $commercial_extension == 'gif' || $commercial_extension == 'bmp' || $commercial_extension == 'jpeg') //if there is an image of any of these types......
 							{
 			?>       
-							<a href="<?php echo $commercial_file_path;?>" data-toggle="lightbox" data-gallery="commercial-gallery" data-type="image">
-							<img src="<?php echo $commercial_file_path;?>" class="gallery img-thumbnail col-md-3 col-sm-12"/>
+							<a href="<?php echo $commercial_file_path;?>" data-toggle="lightbox" data-gallery="commercial-gallery" data-type="image" class="col-12 col-sm-12 col-md-3 col-lg-3">
+							<img src="<?php echo $commercial_file_path;?>" class="gallery img-thumbnail "/>
 							</a>
+							<?php 
+								$row_counter=$row_counter+1;
+								if($row_counter % 4 == 0)
+									{
+							?>
+										</div>
+										<div class="row">
 			<?php
+									}
 							} 
 						}
 					}
@@ -201,12 +228,17 @@
 				}
 				closedir($commercial_folder);
 			?>
+				</div><!--closes row-->
 			</div><!--closes gallerycontainer-->
 			
-			<div id="services" class="gallerycontainer col-10 opaque">
-				<h2 class="text-center">Indoor/ Outdoor</h2>
+			<div id="services" class="gallerycontainer container opaque">
+				<div class="row">
+					<h2 class="text-center col-12">Indoor/ Outdoor</h2>
+				</div><!--closes row-->
+				<br/><br/>
+				<div class="row">
 			<?php
-				
+				$row_counter=0;
 				$services_folder_path = '../media/IndoorOutdoor/'; //services images folder path
 				$num_services_files = glob($services_folder_path . "*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE);//grabs all the images in the directory
 
@@ -221,10 +253,18 @@
 						if($services_extension=='jpg' || $services_extension =='png' || $services_extension == 'gif' || $services_extension == 'bmp' || $services_extension == 'jpeg') //if there is an image of any of these types......
 							{
 			?>       
-							<a href="<?php echo $services_file_path;?>" data-toggle="lightbox" data-gallery="services-gallery" data-type="image">
-							<img src="<?php echo $services_file_path;?>" class="gallery img-thumbnail col-md-3 col-sm-12"/>
+							<a href="<?php echo $services_file_path;?>" data-toggle="lightbox" data-gallery="services-gallery" data-type="image" class="col-12 col-sm-12 col-md-3 col-lg-3">
+							<img src="<?php echo $services_file_path;?>" class="gallery img-thumbnail"/>
 							</a>
+							<?php 
+								$row_counter=$row_counter+1;
+								if($row_counter % 4 == 0)
+									{
+							?>
+										</div>
+										<div class="row">
 			<?php
+									}
 							} 
 						}
 					}
@@ -234,6 +274,7 @@
 				}
 				closedir($services_folder);
 			?>
+				</div><!--closes row-->
 			</div><!--closes gallerycontainer-->
 			
 			

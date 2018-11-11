@@ -15,6 +15,12 @@
 #080401 - black
 */
 
+/***************************** CONTAINER STYLES **********************************/
+
+.container {
+	max-width:100%;
+}
+
 /**************************** HEADING TAG STYLES *********************************/
 
 h1, h2, h3, h4 {
@@ -43,15 +49,10 @@ h5, h6 {
 }
 
 .gallerycontainer {
-	margin-left:auto;
-	margin-right:auto;
+	margin-left:0;
+	margin-right:0;
 	margin-top:5%;
     margin-bottom:5%;
-}
-
-.gallery {
-	padding:0;
-	margin-left:3%;
 }
 
 .opaque {
@@ -357,10 +358,7 @@ input[type=text], input[type=email], select {
 		margin-bottom:5%;
 	}
 
-	.gallery {
-		padding:0;
-		margin-left:3%;
-	}
+	
 
 }
 
