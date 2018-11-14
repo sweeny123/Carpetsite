@@ -19,6 +19,11 @@ p {
 	font-size:0.95em;
 }
 
+/*****jumbotron override**********/
+.jumbotron {
+	margin-bottom:0;
+}
+
 /*overrides for button text color*/
 .btn-info {
 	color:#ffffff !important;
@@ -28,9 +33,18 @@ p {
 
 .header {
 	background-image:url(media/Header/headerimage.jpg);
-	
 	background-size: 100% 100%;
 	padding-bottom:80%;
+}
+
+/**styles for footer map section**/
+
+
+
+/**styles for the footer hours**/
+
+.hours h3{
+	padding-bottom:7%;
 }
 
 
@@ -132,14 +146,21 @@ input[type=text], input[type=email], select {
 
 /**************************LINK CONTAINER ***********************************/
 
+.link-container {
+	padding-top:7%;
+	paddin-bottom:7%;
+}
+
 .link-container .row{
 	margin-right:0px;
 	margin-left:0px;
+	padding-top:8%;
+	padding-bottom:10%;
 }
 
 
 .link-container .card-title {
-		font-size:1.1em;
+	font-size:1.1em;
 }
 	
 /********************GALLERY PAGE STYLES************************************/
@@ -180,7 +201,6 @@ input[type=text], input[type=email], select {
 
 	@media screen and (min-width: 768px) /* Desktop */ {
 		.header {
-			margin-bottom:10%;
 			background-attachment:scroll;
 		}
 		
@@ -196,7 +216,6 @@ input[type=text], input[type=email], select {
 	@media screen  and (min-width: 992px) /* Tablet */ {
 		
 	.header {
-		margin-bottom:10%;
 		background-attachment:fixed;
 	}
 	
@@ -204,7 +223,6 @@ input[type=text], input[type=email], select {
 		background-size:90%;
 		background-repeat:no-repeat;
 		background-position:center;
-		
 	}
 	
 	#gallerybuttons button{
@@ -215,7 +233,6 @@ input[type=text], input[type=email], select {
 
 	@media screen and (min-width: 1200px) {
 	.header {
-		margin-bottom:20%;
 		background-attachment:fixed;
 	}
 	

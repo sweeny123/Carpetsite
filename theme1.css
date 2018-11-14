@@ -11,9 +11,34 @@
 
 /*** color pallette  **********************
 
-#b8b894 - tan
+##d8d8c4 - tan
 #080401 - black
+#4b86d5
 */
+
+.background-blue {
+	background-color:#4b86d5;
+}
+
+.background-tan {
+	background-color:rgba(216,216,196,0.7);
+}
+
+.background-tan-lite {
+	background-color:rgba(216,216,196,0.1);
+}
+
+.text-tan {
+	color:rgba(216,216,196,0.7);
+}
+
+.text-white {
+	color:#ffffff;
+}
+
+.font-black {
+	color:#080401;
+}
 
 /***************************** CONTAINER STYLES **********************************/
 
@@ -21,10 +46,13 @@
 	max-width:100%;
 }
 
+.padded-container {
+	padding:6%;
+}
+
 /**************************** HEADING TAG STYLES *********************************/
 
 h1, h2, h3, h4 {
-	color:#080401;
 	font-family: 'Aref Ruqaa',serif;
 	font-weight:900;
 }
@@ -69,7 +97,7 @@ p, a, label, input, li {
 }
 
 /***************************** LINK STYLES ************************************/
-a, .dropdown a {
+.dropdown a {
 	text-decoration:none;
 	color:#4b86cb !important;
 	font-weight:500;
@@ -100,11 +128,13 @@ a:hover {
 
 .jumbotron img {
 	max-width:23%;
+	margin-left:2%;
+	margin-top:2%;
 }
 
 .jumbotron {
 	padding-top:0;
-	background-color:#ffffff;
+	
 }
 
 .jumbotron .container {
@@ -114,18 +144,20 @@ a:hover {
 
 footer {
 	width:80%;
-	margin-right:auto;
-	margin-left:auto;
+	margin:0 !important;
+	padding:0 !important;
 }
+
 
 footer .card {
 	border-top:1px solid #cccccc;
 	border-radius:0px;
+	margin-bottom:0;
 }
 
 footer .list-group-item {
 	border:none;
-	margin:0;
+	margin-bottom:3%;
 	padding:0;
 }
 
@@ -136,16 +168,24 @@ footer .list-group {
 }
 
 footer p {
-	font-size:0.8em;
-	margin-bottom:0;
+	font-size:0.9em;
+	margin-bottom:1%;
 }
 
 .social-foot{
 	font-size: 2.5em;
 }
 
+.social-foot a {
+	color:#ffffff;
+}
+
 .fa{
 	text-decoration: none;
+}
+
+footer .row {
+	margin:0;
 }
 
 /****************************** CARD STYLES ********************************/
@@ -167,7 +207,7 @@ footer p {
 	position:relative;
 }
 
-.card-img-overlay, .card .container, .card-body, .container-fluid, .container {
+.card-img-overlay, .card-body, .container-fluid {
 	padding:0;
 }
 
@@ -260,11 +300,11 @@ input[type=text], input[type=email], select {
 	
 	
 	.jumbotron {
-		background-color:#ffffff;
+		
 	}
 	
 	.footer-card .list-group {
-		width:90%;
+		width:100%;
 	}
 	
 		
@@ -275,12 +315,9 @@ input[type=text], input[type=email], select {
 
 /* Medium devices (tablets, 768px and up)*/
 	@media screen and (min-width: 768px) { 
-	.jumbotron img {
-		margin-left:-2%;
-	}
 	
 	.jumbotron {
-		background-color:#ffffff;
+		
 		
 	}
 
@@ -303,7 +340,7 @@ input[type=text], input[type=email], select {
 	}
 	
 	.footer-card .list-group {
-		width:90%;
+		width:100%;
 	}
 	
 	.list-group-item {
@@ -316,11 +353,7 @@ input[type=text], input[type=email], select {
 	
 	
 	.jumbotron {
-		background-color:#ffffff;
-	}
-	
-	.jumbotron img {
-		margin-left:-2%;
+		
 	}
 
 	.navbar-collapse li {
@@ -331,13 +364,13 @@ input[type=text], input[type=email], select {
 	}
 	
 	footer .card {
-		width:48%;
+		width:50%;
 		display:inline-block;
 		padding:0;
 	}
 	
 	footer .row {
-		margin-top:10%;
+		
 	}
 	
 	.footer-card .list-group {
@@ -364,10 +397,6 @@ input[type=text], input[type=email], select {
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media screen and (min-width: 1200px) { 
-	
-	.jumbotron img {
-		margin-left:-2%;
-	}
 	
 	nav a {
 		
