@@ -144,6 +144,16 @@ input[type=text], input[type=email], select {
     border-radius: 10px;
 }
 
+/****about us page styles *****/
+
+.aboutus {
+	padding:0;
+}
+
+.aboutus .row {
+	margin:0;
+}
+
 /**************************LINK CONTAINER ***********************************/
 
 .link-container {
