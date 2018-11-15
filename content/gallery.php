@@ -114,7 +114,7 @@
 		
 		<div class="page-content">
 			
-			<div class="container">
+			<div class="container background-tan">
 				<div class="row">
 					<div class="col-sm-10 col-md-4"></div>
 					<h2 class="display-4 text-center col-sm-0 col-md-4">Gallery</h2>
@@ -124,7 +124,7 @@
 			
 			
 			
-			<div class="container w-100">
+			<div class="container w-100 background-tan">
 					<div id="gallerybuttons" class="container">
 						<div class="row">
 							<div class="col-1 col-sm-1 col-md-1 col-lg-1"></div>

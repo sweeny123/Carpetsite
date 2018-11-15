@@ -147,7 +147,12 @@ input[type=text], input[type=email], select {
 /****about us page styles *****/
 
 .aboutus {
-	padding:0;
+	padding-left:0;
+	padding-right:0;
+}
+
+.aboutus-textbox {
+	padding-bottom:7%;
 }
 
 .aboutus .row {
