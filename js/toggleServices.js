@@ -3,7 +3,7 @@ function toggleServices(){
 	 		"use strict";
 			  
 			  if(document.getElementById("residential").classList.contains('visible')){
-				 $("#residential").slideUp(1500);
+				 $("#residential").fadeOut();
 		 	     
 				 $("#residential").removeClass('visible');
 				 //this is to remove the highlight for the button
@@ -12,7 +12,7 @@ function toggleServices(){
 				}
 				
 			  if(document.getElementById("commercial").classList.contains('visible')){
-				 $("#commercial").slideUp(1500);
+				 $("#commercial").fadeOut();
 		 	     
 				 $("#commercial").removeClass('visible');
 				 //this is to remove the highlight for the button
@@ -20,10 +20,10 @@ function toggleServices(){
 				 document.getElementById("commercialbutton").classList.remove('btn-primary'); 
 				}
 			  
-			  $("#services").slideUp();
+			  $("#services").fadeOut();
 			
 			  if(document.getElementById("services").classList.contains('visible')){
-				 $("#services").slideUp(1500);
+				 $("#services").fadeOut();
 		 	     
 				 $("#services").removeClass('visible');
 				 //this is to remove the highlight for the button
@@ -37,7 +37,7 @@ function toggleServices(){
 		        }
 				
 			   else {
-				 $("#services").fadeIn(1500).slideDown(1500);
+				 $("#services").fadeIn(1500).slideDown();
 			     $('#services').addClass('visible');
 				 //this is to add the highlight for the corresponding button
 				 document.getElementById("servicesbutton").classList.add('btn-primary'); 

@@ -20,6 +20,10 @@
 	background-color:#4b86d5;
 }
 
+.background-blue-light {
+	background-color:#c9daf2;
+}
+
 .background-tan {
 	background-color:rgba(216,216,196,0.7);
 }
@@ -90,6 +94,10 @@ h5, h6 {
 
 .clear {
 	opacity:0;
+}
+
+.img-thumbnail {
+	border:none;
 }
 
 /*************************** TEXT TAG STYLES *************************************/
@@ -229,7 +237,6 @@ footer .row {
 
 form {
 	text-shadow: 0px 1px 1px #000;
-	background: #d8e7ff;
 	box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.2), 0 2px 20px -3px rgba(0, 0, 0, 0.19);
 	border-radius: 15px;
 	padding:5%;
