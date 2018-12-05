@@ -16,6 +16,13 @@
 	font-family: 'Aref Ruqaa',serif;
 }
 
+.buttonfont {
+	font-size: 22pt !important;
+	font-weight: 100 !important;
+	padding-bottom: 1%;
+}
+
+
 /*base styles for a tags*/
 
 /*base styles for p tags*/
