@@ -11,6 +11,11 @@
 #080401 - black
 */
 
+/**font for site**/
+.carpetfont {
+	font-family: 'Aref Ruqaa',serif;
+}
+
 /*base styles for a tags*/
 
 /*base styles for p tags*/
@@ -39,7 +44,11 @@ p {
 
 /**styles for footer map section**/
 
-
+/**styles for angieslist picture**/
+.angieslist {
+	width:50%;
+	
+}
 
 /**styles for the footer hours**/
 
