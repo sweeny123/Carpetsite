@@ -131,9 +131,9 @@
 							<div class="col-1 col-sm-1 col-md-1 col-lg-1"></div>
 							<button id="residentialbutton" class="carpetfont btn btn-secondary col-3 col-sm-3 col-md-2 col-lg-2 gallerybutton buttonfont" onclick="toggleResidential();">Carpet</button>
 							<div class="col-1 col-sm-1 col-md-2 col-lg-2"></div>
-							<button id="commercialbutton" class="carpetfont btn btn-secondary col-3 col-sm-3 col-md-2 col-lg-2 gallerybutton" onclick="toggleCommercial();">Flooring</button>
+							<button id="commercialbutton" class="carpetfont btn btn-secondary col-3 col-sm-3 col-md-2 col-lg-2 gallerybutton buttonfont" onclick="toggleCommercial();">Flooring</button>
 							<div class="col-1 col-sm-1 col-md-2 col-lg-2"></div>
-							<button id="servicesbutton" class="carpetfont btn btn-secondary col-3 col-sm-3 col-md-2 col-lg-2 gallerybutton" onclick="toggleServices();">Indoor/Outdoor</button>
+							<button id="servicesbutton" class="carpetfont btn btn-secondary col-3 col-sm-3 col-md-2 col-lg-2 gallerybutton buttonfont" onclick="toggleServices();">Indoor/Outdoor</button>
 						</div><!--closes row-->
 					</div><!--closes gallerybuttons-->
 			</div><!--closes container-->
