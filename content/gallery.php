@@ -95,17 +95,17 @@
 						<a href="tel:5852719050">(585) 271-9050</a>
 					</li>
 					<li>
-						<h3><a href="https://www.facebook.com/wagcarpetsroc/" class="fa fa-facebook"></a></h3>
+						<h3><a href="https://www.facebook.com/wagcarpetsroc/" class="fa fa-facebook" target="_blank"></a></h3>
 					</li>
 					<li>
-						<h3><a href="https://www.instagram.com/wagnercarpets/" class="fa fa-instagram" ></a></h3>
+						<h3><a href="https://www.instagram.com/wagnercarpets/" class="fa fa-instagram" target="_blank"></a></h3>
 					</li>
 					
 				</ul>
 				</div><!-- closes collapse div-->
 			</nav><!--closes nav-->
 			
-			<div  class="jumbotron jumbotron-fluid background-blue" >
+			<div  class="jumbotron jumbotron-fluid" >
 				<div class="container" >
 					<img src="../media/WClogo/WCLogoClear.png" alt="company logo"> 
 				</div>
