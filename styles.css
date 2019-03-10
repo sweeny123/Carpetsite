@@ -22,6 +22,14 @@
 	padding-bottom: 1%;
 }
 
+/**list groups**/
+.list-group, .list-group-flush {
+	margin-right:0 !important;
+}
+
+.list-group-item {
+	border:0 !important;
+}
 
 /*base styles for a tags*/
 
