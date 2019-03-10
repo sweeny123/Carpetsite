@@ -109,7 +109,6 @@
 				<div class="container" >
 					<img src="../media/WClogo/WCLogoClear.png" alt="company logo"> 
 				</div>
-				
 			</div>
 		</header><!--closes header-->
 		
