@@ -442,9 +442,7 @@ input[type=text], input[type=email], select {
 		padding-top:0%;
 	}
 	
-	footer, footer ul, footer .card {
-		max-height:150px;
-	}
+	
 	
 }
 

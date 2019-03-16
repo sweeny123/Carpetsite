@@ -16,6 +16,8 @@
 	font-family: 'Aref Ruqaa',serif;
 }
 
+
+
 /**list groups**/
 .list-group, .list-group-flush {
 	margin-right:0 !important;
@@ -53,6 +55,12 @@ p {
 
 /**styles for footer map section**/
 
+.mapcontainer {
+	width:100%;
+	margin-right:0;
+	margin-left:0;
+}
+
 /**styles for angieslist picture**/
 .angieslist {
 	width:50%;
@@ -70,7 +78,7 @@ p {
 
 .footer-card {
 		width:100%;
-		margin-top:-5%;
+		
 	}
 
 .card {
@@ -231,6 +239,10 @@ input[type=text], input[type=email], select {
 		#gallerybuttons button{
 			font-size:1.1em;
 		}
+
+		.mapcontainer {
+			max-height:500px;
+			}
 }
 
 	@media screen and (min-width: 768px) /* Desktop */ {
@@ -245,6 +257,10 @@ input[type=text], input[type=email], select {
 		#gallerybuttons button{
 			font-size:1.1em;
 		}	
+
+		.mapcontainer {
+			max-height:500px;
+			}
 }
 
 	@media screen  and (min-width: 992px) /* Tablet */ {
@@ -262,6 +278,15 @@ input[type=text], input[type=email], select {
 	#gallerybuttons button{
 		font-size:1.2em;
 	}
+
+	.mapcontainer {
+		max-height:700px;
+		}
+
+	.mapcontainer .embed-responsive-item {
+		max-width:80%;
+		margin-left:10%;
+	}
 	
 }
 
@@ -273,7 +298,15 @@ input[type=text], input[type=email], select {
 	#gallerybuttons button{
 		font-size:1.6em;
 	}
+
+	.mapcontainer {
+		max-height:700px;
+		}
 	
+	.mapcontainer .embed-responsive-item{
+		max-width:80%;
+		margin-left:10%;
+	}
 }
 
 
