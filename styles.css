@@ -53,6 +53,7 @@ p {
 	padding-bottom:80%;
 }
 
+
 /**styles for footer map section**/
 
 .mapcontainer {
@@ -267,6 +268,7 @@ input[type=text], input[type=email], select {
 		
 	.header {
 		background-attachment:fixed;
+		padding-bottom:40%;
 	}
 	
 	.jumbotron {
@@ -293,6 +295,7 @@ input[type=text], input[type=email], select {
 	@media screen and (min-width: 1200px) {
 	.header {
 		background-attachment:fixed;
+		padding-bottom:40%;
 	}
 	
 	#gallerybuttons button{

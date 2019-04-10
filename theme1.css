@@ -77,10 +77,6 @@ h5, h6 {
 	padding-bottom:4%;
 }
 
-#gallerybuttons button {
-	
-}
-
 .gallerycontainer {
 	margin-left:0;
 	margin-right:0;
@@ -144,9 +140,6 @@ a:hover {
 .jumbotron {
 	padding-top:0;
 	
-}
-
-.jumbotron .container {
 }
 
 /***************************** FOOTER STYLES *******************************/
@@ -306,11 +299,6 @@ input[type=text], input[type=email], select {
 	@media screen and (min-width: 576px) { 
 
 	
-	
-	.jumbotron {
-		
-	}
-	
 	.footer-card .list-group {
 		width:100%;
 	}
@@ -323,11 +311,6 @@ input[type=text], input[type=email], select {
 
 /* Medium devices (tablets, 768px and up)*/
 	@media screen and (min-width: 768px) { 
-	
-	.jumbotron {
-		
-		
-	}
 
 	.navbar-collapse li {
 		width: 100%;
@@ -360,10 +343,6 @@ input[type=text], input[type=email], select {
 	@media screen and (min-width: 992px) { 
 	
 	
-	.jumbotron {
-		
-	}
-
 	.navbar-collapse li {
 		width: 100%;
 		margin-left: auto;
@@ -377,10 +356,6 @@ input[type=text], input[type=email], select {
 		padding:0;
 	}
 	
-	footer .row {
-		
-	}
-	
 	.footer-card .list-group {
 		width:100%;
 	}
@@ -388,10 +363,6 @@ input[type=text], input[type=email], select {
 	.footer-card .list-group-item {
 		border:none;
 		
-	}
-
-	#gallerybuttons button {
-			
 	}
 
 	.gallerycontainer {
