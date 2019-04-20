@@ -20,6 +20,10 @@
 	background-color:#4b86d5;
 }
 
+.background-blue-transparent {
+	background-color:rgba(75,134,213,0.3);
+}
+
 .background-blue-light {
 	background-color:#c9daf2;
 }
@@ -97,7 +101,7 @@ h5, h6 {
 }
 
 /*************************** TEXT TAG STYLES *************************************/
-p, a, label, input, li {
+p, a, label, input, li, .tagline {
 	font-family: 'Taviraj', serif;
 }
 

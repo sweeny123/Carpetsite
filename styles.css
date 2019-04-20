@@ -53,10 +53,15 @@ p {
 	padding-bottom:80%;
 }
 
+.taglinerow {
+	margin-left:0 !important;
+	margin-top:-10%;
+}
+
 .tagline {
-	position:absolute;
-	top:60%;
-	text-align: center;
+	font-size: 0.8em;
+	padding-right:0 !important;
+	margin-top:1rem;
 	}
 
 /**styles for footer map section**/
@@ -240,10 +245,15 @@ input[type=text], input[type=email], select {
 	@media screen and (min-width: 576px){
 		.header {
 			background-attachment:scroll;
+			padding-bottom:60%;
+		}
+
+		.taglinerow {
+			margin-top:-5%;
 		}
 
 		.tagline {
-			top:82%;
+			font-size:0.9em;
 		}
 		
 		#gallerybuttons button{
@@ -258,10 +268,16 @@ input[type=text], input[type=email], select {
 	@media screen and (min-width: 768px) /* Desktop */ {
 		.header {
 			background-attachment:scroll;
+			padding-bottom:50%;
+		}
+
+		.taglinerow {
+			margin-top:-3%;
 		}
 
 		.tagline {
-			top:100%;
+			font-size:0.9em;
+			
 		}
 		
 		.link-container .card-title {
@@ -281,11 +297,12 @@ input[type=text], input[type=email], select {
 		
 	.header {
 		background-attachment:fixed;
-		padding-bottom:40%;
+		padding-bottom:55%;
 	}
 
 	.tagline {
-		top:90%;
+		font-size:1.0em;
+		
 	}
 	
 	.jumbotron {
@@ -312,11 +329,11 @@ input[type=text], input[type=email], select {
 	@media screen and (min-width: 1200px) {
 	.header {
 		background-attachment:fixed;
-		padding-bottom:40%;
+		padding-bottom:33%;
 	}
 
 	.tagline {
-		top:80%;
+		font-size:1.1em;
 		
 	}
 	
