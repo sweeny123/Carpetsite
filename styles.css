@@ -128,13 +128,10 @@ p {
 }
 
 .active{
-	background-color: #dddbdc;
 	border-color: #dddbdc;
 	vertical-align: middle;
-	border-radius: 5px;
-	border-width: 0px;
-	border-style: solid;
-	font-weight:bold;
+	font-weight:bold !important;
+	font-size:1.4em;
 }
 
 .dropdown-menu {
@@ -220,7 +217,16 @@ input[type=text], input[type=email], select {
 /********************GALLERY PAGE STYLES************************************/
 
 	#gallerybuttons button{
-		font-size:0.8em;
+		font-size:1.1em;
+		background-color:#ffffff !important;
+		color:#4b86d5 !important;
+		border:none !important;
+		transition-property: none !important;
+		margin-top:3%;
+	}
+
+	#gallerybuttons .row {
+		margin:0 !important;
 	}
 
 
@@ -257,7 +263,7 @@ input[type=text], input[type=email], select {
 		}
 		
 		#gallerybuttons button{
-			font-size:1.1em;
+			font-size:1.3em;
 		}
 
 		.mapcontainer {
@@ -285,7 +291,7 @@ input[type=text], input[type=email], select {
 		}
 		
 		#gallerybuttons button{
-			font-size:1.1em;
+			font-size:1.4em;
 		}	
 
 		.mapcontainer {
@@ -312,7 +318,7 @@ input[type=text], input[type=email], select {
 	}
 	
 	#gallerybuttons button{
-		font-size:1.2em;
+		font-size:1.6em;
 	}
 
 	.mapcontainer {
@@ -338,7 +344,7 @@ input[type=text], input[type=email], select {
 	}
 	
 	#gallerybuttons button{
-		font-size:1.6em;
+		font-size:1.9em;
 	}
 
 	.mapcontainer {

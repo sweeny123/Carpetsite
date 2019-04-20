@@ -114,7 +114,7 @@
 		
 		<div class="page-content">
 			
-			<div class="container background-tan">
+			<div class="container ">
 				<div class="row">
 					<div class="col-sm-10 col-md-4"></div>
 					<h2 class="display-4 text-center col-sm-0 col-md-4">Gallery</h2>
@@ -124,15 +124,17 @@
 			
 			
 			
-			<div class="container w-100 background-tan">
+			<div class="container w-100 ">
 					<div id="gallerybuttons" class="container">
 						<div class="row">
-							<div class="col-1 col-sm-1 col-md-1 col-lg-1"></div>
-							<button id="residentialbutton" class="carpetfont btn btn-secondary col-3 col-sm-3 col-md-2 col-lg-2 gallerybutton buttonfont" onclick="toggleResidential();">Carpet</button>
-							<div class="col-1 col-sm-1 col-md-2 col-lg-2"></div>
-							<button id="commercialbutton" class="carpetfont btn btn-secondary col-3 col-sm-3 col-md-2 col-lg-2 gallerybutton buttonfont" onclick="toggleCommercial();">Flooring</button>
-							<div class="col-1 col-sm-1 col-md-2 col-lg-2"></div>
-							<button id="servicesbutton" class="carpetfont btn btn-secondary col-3 col-sm-3 col-md-2 col-lg-2 gallerybutton buttonfont" onclick="toggleServices();">Indoor/Outdoor</button>
+							<div class="col-1 col-sm-2 col-md-1 col-lg-1"></div>
+							<button id="residentialbutton" class="carpetfont btn btn-secondary  col-xs-12 col-sm-8 col-md-2 col-lg-2 gallerybutton buttonfont" onclick="toggleResidential();">Carpet</button>
+							<div class="col-1 col-sm-2 col-md-1 col-lg-1"></div>
+							<div class="col-0 col-sm-2 col-md-1 col-lg-1"></div>
+							<button id="commercialbutton" class="carpetfont btn btn-secondary  col-xs-12 col-sm-8 col-md-2 col-lg-2 gallerybutton buttonfont" onclick="toggleCommercial();">Flooring</button>
+							<div class="col-1 col-sm-2 col-md-1 col-lg-1"></div>
+							<div class="col-0 col-sm-2 col-md-1 col-lg-0"></div>
+							<button id="servicesbutton" class="carpetfont btn btn-secondary  col-xs-12 col-sm-8 col-md-3 col-lg-3 gallerybutton buttonfont" onclick="toggleServices();">Indoor/Outdoor</button>
 						</div><!--closes row-->
 					</div><!--closes gallerybuttons-->
 			</div><!--closes container-->

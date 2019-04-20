@@ -102,7 +102,7 @@ h5, h6 {
 
 /*************************** TEXT TAG STYLES *************************************/
 p, a, label, input, li, .tagline {
-	font-family: 'Taviraj', serif;
+	font-family: 'Taviraj', serif !important;
 }
 
 /***************************** LINK STYLES ************************************/
