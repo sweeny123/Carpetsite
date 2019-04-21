@@ -195,6 +195,16 @@ input[type=text], input[type=email], select {
 	margin:0;
 }
 
+/**************************FAQ PAGE ***********************************/
+
+.faqcontainer .lead {
+	font-size:1.6em !important;
+}
+
+.faqcontainer p {
+	font-size:1.4em !important;
+}
+
 /**************************LINK CONTAINER ***********************************/
 
 .link-container {
@@ -326,8 +336,7 @@ input[type=text], input[type=email], select {
 		}
 
 	.mapcontainer .embed-responsive-item {
-		max-width:80%;
-		margin-left:10%;
+		max-width:100%;
 	}
 	
 }
@@ -352,8 +361,7 @@ input[type=text], input[type=email], select {
 		}
 	
 	.mapcontainer .embed-responsive-item{
-		max-width:80%;
-		margin-left:10%;
+		max-width:100%;
 	}
 }
 
