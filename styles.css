@@ -70,7 +70,10 @@ p {
 	width:100%;
 	margin-right:0;
 	margin-left:0;
+	max-height:400px;
 }
+
+
 
 /**styles for angieslist picture**/
 .angieslist {
@@ -152,6 +155,13 @@ p {
 	border-radius: 15px;	
 }
 
+/***********************INDEX PAGE***********************/
+
+#google-reviews .review-item {
+	display:inline-block !important;
+	width:40% !important;
+	margin:5% !important;
+}
 
 /*quote page styles*/
 
@@ -276,9 +286,6 @@ input[type=text], input[type=email], select {
 			font-size:1.3em;
 		}
 
-		.mapcontainer {
-			max-height:500px;
-			}
 }
 
 	@media screen and (min-width: 768px) /* Desktop */ {
@@ -304,9 +311,7 @@ input[type=text], input[type=email], select {
 			font-size:1.4em;
 		}	
 
-		.mapcontainer {
-			max-height:500px;
-			}
+	
 }
 
 	@media screen  and (min-width: 992px) /* Tablet */ {
@@ -331,10 +336,6 @@ input[type=text], input[type=email], select {
 		font-size:1.6em;
 	}
 
-	.mapcontainer {
-		max-height:700px;
-		}
-
 	.mapcontainer .embed-responsive-item {
 		max-width:100%;
 	}
@@ -355,10 +356,6 @@ input[type=text], input[type=email], select {
 	#gallerybuttons button{
 		font-size:1.9em;
 	}
-
-	.mapcontainer {
-		max-height:700px;
-		}
 	
 	.mapcontainer .embed-responsive-item{
 		max-width:100%;
