@@ -188,6 +188,7 @@ footer p {
 
 .fa{
 	text-decoration: none;
+	font-family:FontAwesome !important;
 }
 
 footer .row {
