@@ -10,6 +10,10 @@
 #dddbdc - grey - light
 #080401 - black
 */
+/**override for social media icons**/
+.fa {
+	font-family:fontawesome !important;
+}
 
 /**font for site**/
 .carpetfont {
