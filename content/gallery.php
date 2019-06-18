@@ -82,7 +82,6 @@
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
 							<a class="dropdown-item carpetfont" href="gallery.php?1">Carpet</a>
 							<a class="dropdown-item carpetfont" href="gallery.php?2">Flooring</a>
-							<a class="dropdown-item carpetfont" href="gallery.php?3">Indoor/Outdoor</a>
 						</div><!--closes dropdown-->
 					</li>
 					<li class="nav-item" >
@@ -127,14 +126,11 @@
 			<div class="container w-100 ">
 					<div id="gallerybuttons" class="container">
 						<div class="row">
-							<div class="col-1 col-sm-2 col-md-1 col-lg-1"></div>
+							<div class="col-1 col-sm-2 col-md-3 col-lg-3"></div>
 							<button id="residentialbutton" class="carpetfont btn btn-secondary  col-xs-12 col-sm-8 col-md-2 col-lg-2 gallerybutton buttonfont" onclick="toggleResidential();">Carpet</button>
 							<div class="col-1 col-sm-2 col-md-1 col-lg-1"></div>
 							<div class="col-0 col-sm-2 col-md-1 col-lg-1"></div>
 							<button id="commercialbutton" class="carpetfont btn btn-secondary  col-xs-12 col-sm-8 col-md-2 col-lg-2 gallerybutton buttonfont" onclick="toggleCommercial();">Flooring</button>
-							<div class="col-1 col-sm-2 col-md-1 col-lg-1"></div>
-							<div class="col-0 col-sm-2 col-md-1 col-lg-0"></div>
-							<button id="servicesbutton" class="carpetfont btn btn-secondary  col-xs-12 col-sm-8 col-md-3 col-lg-3 gallerybutton buttonfont" onclick="toggleServices();">Indoor/Outdoor</button>
 						</div><!--closes row-->
 					</div><!--closes gallerybuttons-->
 			</div><!--closes container-->
@@ -232,53 +228,6 @@
 			?>
 				</div><!--closes row-->
 			</div><!--closes gallerycontainer-->
-			
-			<div id="services" class="gallerycontainer container opaque">
-				<div class="row">
-					<h2 class="text-center col-12">Indoor/ Outdoor</h2>
-				</div><!--closes row-->
-				<br/><br/>
-				<div class="row">
-			<?php
-				$row_counter=0;
-				$services_folder_path = '../media/IndoorOutdoor/'; //services images folder path
-				$num_services_files = glob($services_folder_path . "*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE);//grabs all the images in the directory
-
-				$services_folder = opendir($services_folder_path);//opens the directory
-				
-				if($num_services_files > 0)
-					{
-					while(false !== ($services_file = readdir($services_folder))) //reads directory to get file name, stops when there are no more images
-						{
-						$services_file_path = $services_folder_path.$services_file;// get an image
-						$services_extension = strtolower(pathinfo($services_file_path ,PATHINFO_EXTENSION));//returns only the extension
-						if($services_extension=='jpg' || $services_extension =='png' || $services_extension == 'gif' || $services_extension == 'bmp' || $services_extension == 'jpeg') //if there is an image of any of these types......
-							{
-			?>       
-							<a href="<?php echo $services_file_path;?>" data-toggle="lightbox" data-gallery="services-gallery" data-type="image" class="col-12 col-sm-12 col-md-3 col-lg-3">
-							<img src="<?php echo $services_file_path;?>" class="gallery img-thumbnail"/>
-							</a>
-							<?php 
-								$row_counter=$row_counter+1;
-								if($row_counter % 4 == 0)
-									{
-							?>
-										</div>
-										<div class="row">
-			<?php
-									}
-							} 
-						}
-					}
-				else
-				{
-					echo "the folder was empty !";
-				}
-				closedir($services_folder);
-			?>
-				</div><!--closes row-->
-			</div><!--closes gallerycontainer-->
-			
 			
 		</div><!--closes page-content-->
 		

@@ -2,15 +2,6 @@
 function toggleResidential(){
 	 		"use strict";
 			
-			   if(document.getElementById("services").classList.contains('visible')){
-				 $("#services").slideUp();
-		 	     
-				 $("#services").removeClass('visible');
-				 //this is to remove the highlight for the button
-				 document.getElementById("servicesbutton").classList.add('btn-secondary');
-				 document.getElementById("servicesbutton").classList.remove('btn-primary'); 
-				}
-				
 			  if(document.getElementById("commercial").classList.contains('visible')){
 				 $("#commercial").fadeOut();
 		 	     

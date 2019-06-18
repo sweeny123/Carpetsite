@@ -10,15 +10,6 @@ function toggleCommercial(){
 				 document.getElementById("residentialbutton").classList.add('btn-secondary');
 				 document.getElementById("residentialbutton").classList.remove('btn-primary'); 
 				}
-				
-			  if(document.getElementById("services").classList.contains('visible')){
-				 $("#services").fadeOut();
-		 	     
-				 $("#services").removeClass('visible');
-				 //this is to remove the highlight for the button
-				 document.getElementById("servicesbutton").classList.add('btn-secondary');
-				 document.getElementById("servicesbutton").classList.remove('btn-primary'); 
-				}
 		
 			  $("#commercial").fadeOut();
 			
