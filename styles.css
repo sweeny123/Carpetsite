@@ -35,9 +35,7 @@
 
 /*base styles for p tags*/
 
-p {
-	font-size:1.1em;
-}
+
 
 /*****jumbotron override**********/
 .jumbotron {
@@ -46,6 +44,7 @@ p {
 	background-repeat:no-repeat;
 	background-position:center;
 	min-height:400px !important;
+	background-color:#ffffff !important;
 }
 
 /*overrides for button text color*/
@@ -151,7 +150,6 @@ p {
 .active{
 	border-color: #dddbdc;
 	vertical-align: middle;
-	font-weight:bold !important;
 	font-size:1.4em;
 }
 
@@ -226,11 +224,11 @@ input[type=text], input[type=email], select {
 /**************************FAQ PAGE ***********************************/
 
 .faqcontainer .lead {
-	font-size:1.6em !important;
+	font-size:1.4em !important;
 }
 
 .faqcontainer p {
-	font-size:1.4em !important;
+	font-size:1.2em !important;
 }
 
 /**************************LINK CONTAINER ***********************************/
