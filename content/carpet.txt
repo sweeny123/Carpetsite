@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<link rel="shortcut icon" type="image/png" href="../favicon.png"><!-- used for icon in tab-->
+	
+	<!--BOOTSTRAP 4-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/marcus.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	
+	<!--Adobe Edge Fonts declaration-->
+	<script src="//use.edgefonts.net/poiret-one;rosario.js"></script>
+	
+	<!--webkit fonts declaration-->
+	<link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Taviraj" rel="stylesheet">
+	
+	<!-- CSS containing social media icons:  Reference https://www.w3schools.com/howto/howto_css_social_media_buttons.asp for more info -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+
+	<!--site specific stylesheet-->
+	<link rel="stylesheet" type="text/css" href="../theme1.css">	
+
+	<!--site specific stylesheet-->
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+</head>
+
+<body>
+    
+	<div class="container-fluid">
+	
+		<header>	
+			<!-- navigation-->
+			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light" >
+			
+				<a class="navbar-brand" href="#"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse " id="navbarSupportedContent" >
+				
+				<ul class="navbar-nav nav-fill w-100">
+					<li class="nav-item" >
+						<a href='../index.html'>Home</a>
+					</li>
+					<li class="nav-item active" >
+						<a href='about.html'>About</a>
+					</li>
+					<li class="nav-item dropdown" >
+						<a class="nav-item nav-link dropdown-toggle" href='#' id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+							<a class="dropdown-item" href="gallery.php?1">Carpet</a>
+							<a class="dropdown-item" href="gallery.php?2">Flooring</a>
+							<a class="dropdown-item" href="gallery.php?3">Indoor/Outdoor</a>
+						</div><!--closes dropdown-->
+					</li>
+					<li class="nav-item" >
+						<a href='services.html'>Services</a>
+					</li>
+					<li class="nav-item" >
+						<a href='faq.html' >FAQs</a>
+					</li>
+					<li class="nav-item" >
+						<a href='quote.html' >Contact</a>
+					</li>
+					<li class="nav-item" >
+						<a href="tel:5852719050">(585) 271-9050</a>
+					</li>
+					<li>
+						<h3><a href="#" class="fa fa-facebook"></a></h3>
+					</li>
+					<li>
+						<h3><a href="#" class="fa fa-google-plus" ></a></h3>
+					</li>
+					<li>
+						<h3><a href="#" class="fa fa-instagram" ></a></h3>
+					</li>
+					
+				</ul>
+				</div><!-- closes collapse div-->
+			</nav><!--closes nav-->
+			
+			<div  class="jumbotron jumbotron-fluid header background-blue" >
+				<div class="container" >
+					<img src="../media/WClogo/WCLogoClear.png" alt="company logo">
+				</div>
+			</div>
+		</header><!--closes header-->
+		
+		<div class="container w-100 aboutus">
+			<div class="row background-tan">
+				<div class=" col-1 col-sm-1 col-md-0 col-lg-0" ></div>
+				<h2 class="display-3 col-9 col-sm-10 col-md-10 col-lg-10">About Us</h2>
+			</div><!--closes row-->
+			
+			<div class="row background-tan"><p></p></div>
+			
+			<div class="row background-tan aboutus-textbox">
+				<div class="container col-9 col-sm-9 col-md-9 col-lg-9">
+					<p><span class="lead">Andy Wagner, owner of Wagner Carpets, was born and raised in the Rochester area and with that comes a tremendous love for the City.</span> He began his journey as a Professional Carpet Installer in 2002 and became an Independent Installer in 2012. Continuing to install for the various carpet stores in Rochester, Andy quickly became known as the go-to installer for high-end and difficult jobs. With an eye for detail and a drive for excellence that is unsurpassed in the industry, Andy has done everything from cottages and apartments to businesses and multi-million dollar homes. Installing all over the city and into parts of Ontario and the Finger Lakes, Andy's success as an installer eventually lead him to adding an assistant installer to his one-man team in 2015.</p><br/>
+					<p>When approached by a fellow carpet installer and asked if Andy would be interested in buying his carpet business from him, it seemed like the next logical step and in 2018, Wagner Carpets was born. Throughout his many years as an installer, Andy has gotten to know which carpets work best in which areas. So owning his own store has created a very unique opportunity for him to bring this extensive knowledge and understanding to the sales floor. You will find that Andy specializes in matching you with product samples that will not only meet your needs but will also fit your budget and look beautiful for many years to come. That's the awesome thing about Andy, when the sales person is the installer - you know you can trust the quality of the product you are choosing.</p>
+					<p>With more business comes more hands. Andy has not only added to his team of installers but is also working with a group of excellent guys who install all of the hard surface flooring jobs. Built on honesty, integrity and a love for this City, Wagner Carpets is proud to serve both Rochester and the surrounding areas.</p><!-- ends about text-->
+				</div><!--closes container-->
+			</div><!--closes row-->
+		</div><!--closes container-->
+
+		<footer class="container">
+			<div class="row">
+			<!-- address, contact info-->
+			<div class="card col-md-6 col-sm-12 background-blue">
+				<div class="card-body">
+				<ul class="list-group text-center">
+					<li class="list-group-item background-blue">
+						<h3 class="display-4 text-white">Contact:</h3>
+					</li>
+					<li class="list-group-item background-blue">
+						<a href="tel:5852719050" class="btn btn-outline-light">Call Me</a>
+						<a href="mailto:wagnercarpets@gmail.com" class="btn btn-outline-light">Email Me</a>
+					</li>
+					<li class="list-group-item background-blue">
+						<br>	
+						<h3>Wagner Carpets</h3>
+					</li>
+					<li class="list-group-item background-blue">
+						<p>The Highest Quality Carpet and Flooring Services in Rochester, New York</p>
+					</li>
+					<li class="list-group-item background-blue">
+						<p>Formerly known as Cliff Kemp Carpet and Flooring</p>
+					</li>
+					<li class="social-foot">
+						<a href="#" class="fa fa-facebook"  ></a>
+						<a href="#" class="fa fa-google-plus" ></a>
+						<a href="#" class="fa fa-instagram" ></a>
+					</li>
+				</ul>
+				</div><!--closes card body-->
+			</div><!--closes card-->
+			<div class="card  col-sm-12 col-md-6">
+				<div class="card-body">
+				<ul class="list-group text-center hours">
+					<li class="list-group-item">
+						<h3 class="display-4">Hours of Operation:</h3>
+					</li>
+					<li class="list-group-item">
+						<p>Monday 8:00 - 5:00pm</p>
+						<p>Tuesday 8:00 - 5:00pm</p>
+						<p>Wednesday 8:00 - 4:00pm</p>
+						<p>Thursday 8:00 - 5:00pm</p>
+						<p>Friday 8:00-4:00pm</p>
+						<p>Saturday Closed</p>
+						<p>Sunday Closed</p>
+					</li>	
+				</ul>
+				</div><!--closes card body-->
+			</div><!--Closes Card-->
+			</div><!--Closes row-->
+			
+			<div class="row">
+			<div class="card col-md-12 col-sm-12 background-tan">
+				<div class="card-body">
+					<ul class="list-group text-center map">
+						<li class="list-group-item background-tan-lite">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2909.762150496734!2d-77.62183618451778!3d43.172516579140634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6b4462c7319e3%3A0xaffbeea96c528478!2s850+St+Paul+St+%2335%2C+Rochester%2C+NY+14605!5e0!3m2!1sen!2sus!4v1538688343815"  frameborder="0" style="border:0" allowfullscreen></iframe>
+						<li>
+					</ul>
+				</div><!--closes card body-->
+			</div><!--Closes card-->
+			</div><!--ends row-->
+		</footer>			
+	</div><!--closes container-fluid-->
+	
+
+	<script src='./js/animateHeadings.js'></script>
+		
+</body>
+</html>

@@ -9,8 +9,8 @@
 
 
 <?php
-
-$email_to = "info@wagnercarpetsroc.com";
+//correct email address: 
+$email_to = "wagnercarpets@gmail.com";
 $email_subject = "Customer Information Request";
  
 // Escape user inputs for security - references the name attribute on the contact page in the POST 
@@ -63,7 +63,7 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 // More headers
 $headers .= 'From:'.$customer_email. "\r\n";
-$headers .= 'Cc: bjrodell@gmail.com' . "\r\n";
+$headers .= 'Cc: info@wagnercarpetsroc.com' . "\r\n";
 
 
 mail($email_to, $email_subject, $email_message, $headers);
