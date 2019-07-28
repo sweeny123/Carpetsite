@@ -58,6 +58,10 @@
 	background-image:url(media/Header/indexheaderimage.jpg);
 }
 
+#aboutheader {
+	background-image:url(media/Header/aboutheaderimage.jpg);
+}
+
 #faqheader {
 	background-image:url(media/header/faqheaderimage.jpg);
 }
@@ -304,7 +308,7 @@ input[type=text], input[type=email], select {
 /* Small devices (landscape phones, 576px and up)*/
 
 	@media screen and (min-width: 576px){
-		#indexheader, #faqheader, #flooringheader, #carpetheader {
+		#indexheader, #faqheader, #flooringheader, #carpetheader, #aboutheader {
 			background-attachment:scroll;
 			padding-bottom:60%;
 		}
@@ -330,7 +334,7 @@ input[type=text], input[type=email], select {
 }
 
 	@media screen and (min-width: 768px) /* Desktop */ {
-		#indexheader, #faqheader, #flooringheader, #carpetheader {
+		#indexheader, #faqheader, #flooringheader, #carpetheader, #aboutheader {
 			background-attachment:scroll;
 			padding-bottom:50%;
 		}
@@ -372,7 +376,7 @@ input[type=text], input[type=email], select {
 
 	@media screen  and (min-width: 992px) /* Tablet */ {
 		
-	#indexheader, #faqheader, #flooringheader, #carpetheader {
+	#indexheader, #faqheader, #flooringheader, #carpetheader, #aboutheader {
 		background-attachment:fixed;
 		padding-bottom:55%;
 	}
@@ -415,7 +419,7 @@ input[type=text], input[type=email], select {
 }
 
 	@media screen and (min-width: 1200px) {
-	#indexheader, #faqheader, #flooringheader, #carpetheader {
+	#indexheader, #faqheader, #flooringheader, #carpetheader, #aboutheader {
 		background-attachment:fixed;
 		padding-bottom:33%;
 	}
