@@ -87,7 +87,7 @@
 	width:100%;
 	margin-right:0;
 	margin-left:0;
-	max-height:400px;
+	max-height:500px;
 }
 
 
@@ -173,10 +173,19 @@
 
 /***********************INDEX PAGE***********************/
 
-#google-reviews .review-item {
+#cws_google_reviews #google-reviews .cwsinc-review-item {
 	display:inline-block !important;
 	width:40% !important;
 	margin:5% !important;
+	vertical-align: top;
+}
+
+#cws_google_reviews #google-reviews .cwsinc-review-item + .cwsinc-review-item {
+	border-top:none !important;
+}
+
+#cws_google_reviews {
+	background-color:#ffffff !important;
 }
 
 /*quote page styles*/
@@ -339,6 +348,11 @@ input[type=text], input[type=email], select {
 			font-size:1.4em;
 		}	
 
+		#cws_google_reviews #google-reviews .cwsinc-review-item {
+			display:inline-block !important;
+			width:40% !important;
+			margin:5% !important;
+		}
 	
 }
 
@@ -373,6 +387,12 @@ input[type=text], input[type=email], select {
 	.mapcontainer .embed-responsive-item {
 		max-width:100%;
 	}
+
+	#cws_google_reviews #google-reviews .cwsinc-review-item {
+		display:inline-block !important;
+		width:40% !important;
+		margin:5% !important;
+	}
 	
 }
 
@@ -399,6 +419,12 @@ input[type=text], input[type=email], select {
 	
 	.mapcontainer .embed-responsive-item{
 		max-width:100%;
+	}
+
+	#cws_google_reviews #google-reviews .cwsinc-review-item {
+		display:inline-block !important;
+		width:15% !important;
+		margin:5% !important;
 	}
 }
 

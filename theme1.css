@@ -115,7 +115,6 @@ p, a, label, input, li, .tagline {
 /***************************** LINK STYLES ************************************/
 .dropdown a {
 	text-decoration:none;
-	color:#4b86cb !important;
 	font-weight:500;
 }
 
