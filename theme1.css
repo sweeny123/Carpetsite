@@ -13,8 +13,13 @@
 
 ##d8d8c4 - tan
 #080401 - black
+#33ccff - blue
 #4b86d5
 */
+
+.navbar a {
+	color:#33ccff !important;
+}
 
 .background-blue {
 	background-color:#33ccff;
@@ -43,6 +48,8 @@
 .text-white {
 	color:#ffffff;
 }
+
+
 
 .font-black {
 	color:#080401;
