@@ -180,6 +180,10 @@
 	vertical-align: top;
 }
 
+.cws-powered-by, .cws-logo {
+	visibility:hidden !important;
+}
+
 #cws_google_reviews #google-reviews .cwsinc-review-item + .cwsinc-review-item {
 	border-top:none !important;
 }
@@ -262,12 +266,18 @@ input[type=text], input[type=email], select {
 /********************GALLERY PAGE STYLES************************************/
 
 	#gallerybuttons button{
-		font-size:1.1em;
+		font-size:1.3em;
 		background-color:#ffffff !important;
-		color:#4b86d5 !important;
+		color:#33ccff !important;
+		border-color: #33ccff !important;
 		border:none !important;
 		transition-property: none !important;
-		margin-top:3%;
+		padding-bottom:1%;
+		margin-bottom: 3%;
+	}
+
+	#gallerybuttons button:hover {
+		font-size:1.7em;
 	}
 
 	#gallerybuttons .row {
@@ -314,7 +324,7 @@ input[type=text], input[type=email], select {
 		}
 		
 		#gallerybuttons button{
-			font-size:1.3em;
+			font-size:1.5em;
 		}
 
 }
@@ -345,8 +355,12 @@ input[type=text], input[type=email], select {
 		}
 		
 		#gallerybuttons button{
-			font-size:1.4em;
+			font-size:1.5em;
 		}	
+
+		#gallerybuttons button:hover {
+			font-size:1.7em;
+		}
 
 		#cws_google_reviews #google-reviews .cwsinc-review-item {
 			display:inline-block !important;
@@ -384,6 +398,10 @@ input[type=text], input[type=email], select {
 		font-size:1.6em;
 	}
 
+	#gallerybuttons button:hover {
+		font-size:1.8em;
+	}
+
 	.mapcontainer .embed-responsive-item {
 		max-width:100%;
 	}
@@ -414,7 +432,11 @@ input[type=text], input[type=email], select {
 	}
 	
 	#gallerybuttons button{
-		font-size:1.9em;
+		font-size:2.1em;
+	}
+
+	#gallerybuttons button:hover {
+		font-size:2.3em;
 	}
 	
 	.mapcontainer .embed-responsive-item{

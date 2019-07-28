@@ -139,7 +139,7 @@
 			
 			<div id="residential" class="gallerycontainer container opaque">
 				<div class="row">
-					<h2 class="text-center col-12">Carpet</h2>
+					<h2 class="text-center col-12">Carpet Gallery</h2>
 				</div><!--closes row-->
 				<br/><br/>
 				<div class="row">
@@ -186,7 +186,7 @@
 			
 			<div id="commercial" class="gallerycontainer container opaque">
 				<div class="row">
-					<h2 class="text-center col-12">Flooring</h2>
+					<h2 class="text-center col-12">Flooring Gallery</h2>
 				</div><!--closes row-->
 				<br/><br/>
 				<div class="row">
@@ -239,7 +239,7 @@
 					<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2909.762150496734!2d-77.62183618451778!3d43.172516579140634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6b4462c7319e3%3A0xaffbeea96c528478!2s850+St+Paul+St+%2335%2C+Rochester%2C+NY+14605!5e0!3m2!1sen!2sus!4v1538688343815"  frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div><!--ends map container div-->
 			</div><!--ends row-->
-			
+
 			<div class="row">
 			<!-- address, contact info-->
 			<div class="card col-md-6 col-sm-12 background-blue">
@@ -276,6 +276,7 @@
 						<h3 class="display-5">Come See Us:</h3>
 					</li>
 					<li class="list-group-item">
+						<p><span class="lead">~ Showroom by Apointment Only ~</span></p>
 						<p>Monday 8:00 - 4:00pm</p>
 						<p>Tuesday 8:00 - 4:00pm</p>
 						<p>Wednesday 8:00 - 4:00pm</p>
